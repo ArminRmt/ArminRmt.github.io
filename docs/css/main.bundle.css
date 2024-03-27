@@ -9924,3 +9924,24 @@ a.has-text-danger-dark:hover {
 .carousel-cell {
   width: 100%;
 }
+
+/* Unique classes for styling */
+.small-projects-section .project-card {
+  background-color: #f7eedd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Responsive styling using media queries */
+@media screen and (max-width: 768px) {
+  .small-projects-section .tile.is-ancestor {
+    display: flex; /* Change the display to flex for mobile */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center the items horizontally */
+  }
+
+  .small-projects-section .tile.is-parent {
+    flex: 0 0 100%; /* Make the parent tile take up full width */
+  }
+}

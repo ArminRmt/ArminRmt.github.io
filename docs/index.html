@@ -91,7 +91,7 @@
 
 
 
-      <!------------------        About Me        ------------------>
+    <!------------------        About Me        ------------------>
       <section class="section">
         <div class="container">
           <h1 class="title" style="text-align: center;">About Me</h1>
@@ -116,10 +116,23 @@
               <li>Familiarity with: machine learning, compiler design, Hardware language, <strong>modular microservice design</strong>, Search Engines</li>
             </ul>
           </p>
+          <br>
+          <p>
+            Personal Information:
+          </p>
+          <ul style="margin-left: 20px; list-style-type: disc;">
+            <li><strong>Age:</strong> 21</li>
+            <li><strong>Current Location:</strong> Mazandaran, Nowshahr </li>
+            <li><strong>Military Service Status:</strong> Mashmool</li>
+            <li><strong>Marital Status:</strong> Single</li>
+          </ul>
+          
+          
         </div>
       </section>
+
+            
       
-    
     <!------------------        Experience        ------------------>
 
     <section class="section">
@@ -355,26 +368,33 @@
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-12">
             <div class="tile">
-
+    
               <div class="tile is-parent">
-                <article class="tile is-child notification" style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                <article class="tile is-child notification project-card">
                   <p class="title has-text-centered">Text Editor</p>
                   <figure class="image is-3by2">
                     <img class="modal-trigger non-clickable" data-target="project-modal" src="img/text-editor.png" alt="" style="border-radius: 10px;">
                   </figure>
-                  <div class="content" style="padding-top: 20px;">
-                    <div class="tags" style="display: flex; justify-content: center; margin-bottom: 20px;">
+                  <div class="content">
+                    <div class="tags">
+                      <br>
                       <p>
                         Text editor including open/save, print, cut/copy/paste, undo/redo operations, and font customization options such as styles and sizes.
                       </p>
-                      <span class="tag" style="background-color: #FDAF7B; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">java swing</span>
+                      <span class="tag">java swing</span>
                     </div>
                     <div class="has-text-centered">
-                      <a href="https://github.com/ArminRmt/-TextEditor" target="_blank" class="button is-primary" style="padding: 10px 20px; color: #fff; border: none; border-radius: 5px; text-decoration: none;">View Project</a>
+                      <a href="https://github.com/ArminRmt/-TextEditor" target="_blank" class="button is-primary">View Project</a>
                     </div>
                   </div>
                 </article>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
               
 
 
@@ -494,259 +514,6 @@
         </nav>
       </div>
     </section>
-
-
-
-
-    <!------------------        Modals        ------------------>
-
-    <div id="project-1-modal" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Project title</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <div id="project-1-modal-carousel" class="carousel">
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/1.png" />
-            </figure>
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/2.png" />
-            </figure>
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/3.png" />
-            </figure>
-          </div>
-
-          <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-
-            <div class="tags">
-              <span class="tag">angular</span>
-              <span class="tag">mongo</span>
-              <span class="tag">typscript</span>
-              <span class="tag">node</span>
-            </div>
-          </div>
-        </section>
-        <footer class="modal-card-foot">
-          <button class="button is-success">Close</button>
-        </footer>
-      </div>
-    </div>
-
-    <div id="project-2-modal" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Project title</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <div id="project-2-modal-carousel" class="carousel">
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/1.png" />
-            </figure>
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/2.png" />
-            </figure>
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/3.png" />
-            </figure>
-          </div>
-
-          <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-
-            <div class="tags">
-              <span class="tag">angular</span>
-              <span class="tag">mongo</span>
-              <span class="tag">typscript</span>
-              <span class="tag">node</span>
-            </div>
-          </div>
-        </section>
-        <footer class="modal-card-foot">
-          <button class="button is-success">Close</button>
-        </footer>
-      </div>
-    </div>
-
-    <div id="project-3-modal" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Project title</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <div id="project-3-modal-carousel" class="carousel">
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/1.png" />
-            </figure>
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/2.png" />
-            </figure>
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/3.png" />
-            </figure>
-          </div>
-
-          <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <div class="tags">
-              <span class="tag">angular</span>
-              <span class="tag">mongo</span>
-              <span class="tag">typscript</span>
-              <span class="tag">node</span>
-            </div>
-          </div>
-        </section>
-        <footer class="modal-card-foot">
-          <button class="button is-success">Close</button>
-        </footer>
-      </div>
-    </div>
-
-    <div id="project-4-modal" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Project title</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <div id="project-4-modal-carousel" class="carousel">
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/1.png" />
-            </figure>
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/2.png" />
-            </figure>
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/3.png" />
-            </figure>
-          </div>
-
-          <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <div class="tags">
-              <span class="tag">angular</span>
-              <span class="tag">mongo</span>
-              <span class="tag">typscript</span>
-              <span class="tag">node</span>
-            </div>
-          </div>
-        </section>
-        <footer class="modal-card-foot">
-          <button class="button is-success">Close</button>
-        </footer>
-      </div>
-    </div>
-
-    <div id="project-5-modal" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Project title</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <div id="project-5-modal-carousel" class="carousel">
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/1.png" />
-            </figure>
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/2.png" />
-            </figure>
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/3.png" />
-            </figure>
-          </div>
-
-          <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <div class="tags">
-              <span class="tag">angular</span>
-              <span class="tag">mongo</span>
-              <span class="tag">typscript</span>
-              <span class="tag">node</span>
-            </div>
-          </div>
-        </section>
-        <footer class="modal-card-foot">
-          <button class="button is-success">Close</button>
-        </footer>
-      </div>
-    </div>
-
-    <div id="project-6-modal" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Project title</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <div id="project-6-modal-carousel" class="carousel">
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/1.png" />
-            </figure>
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/2.png" />
-            </figure>
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/3.png" />
-            </figure>
-          </div>
-
-          <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <div class="tags">
-              <span class="tag">angular</span>
-              <span class="tag">mongo</span>
-              <span class="tag">typscript</span>
-              <span class="tag">node</span>
-            </div>
-          </div>
-        </section>
-        <footer class="modal-card-foot">
-          <button class="button is-success">Close</button>
-        </footer>
-      </div>
-    </div>
 
 
 
