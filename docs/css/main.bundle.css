@@ -5,6 +5,13 @@ https://flickity.metafizzy.co
 .flickity-enabled {
   position: relative;
 }
+
+.rtl {
+  direction: rtl;
+  text-align: right; /* To ensure the alignment of text and elements */
+}
+
+
 .flickity-enabled:focus {
   outline: none;
 }
