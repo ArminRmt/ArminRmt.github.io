@@ -1,6 +1,4 @@
-// languageSwitcher.js
 
-// Define language-specific texts
 const texts = {
     'en': {
         'heroSection': 'Hero Section',
@@ -153,7 +151,7 @@ const texts = {
     }
 };
 
-// Function to switch between languages
+// switch between languages
 function changeLanguage(language) {
     translateSection(language, 'heroSection');
     translateSection(language, 'aboutMeSection');
@@ -164,11 +162,10 @@ function changeLanguage(language) {
     translateSection(language, 'EducationSection');
     translateSection(language, 'ContactSection');
     translateSection(language, 'FooterSection');
-
-
 }
 
-// Function to translate a specific section
+
+// translate a specific section
 function translateSection(language, sectionId) {
     const elements = document.querySelectorAll(`#${sectionId} [data-translate]`);
     elements.forEach(element => {
@@ -184,5 +181,4 @@ function translateSection(language, sectionId) {
         section.classList.remove('rtl');
     }
 }
-
 
