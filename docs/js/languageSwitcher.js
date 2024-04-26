@@ -1,4 +1,3 @@
-
 const texts = {
     'en': {
         'heroSection': 'Hero Section',
@@ -14,10 +13,10 @@ const texts = {
         'additionalSkills': 'Additional Skills: Linux, SQL & NoSQL databases, Unit Testing, Caching, REST APIs, JavaFx, PyQt',
         'familiarityWith': 'Familiarity with: machine learning, compiler design, Hardware language, modular microservice design, Search Engines',
         'personalInfoTitle': 'Personal Information:',
-        'ageTitle': 'Age:',
-        'preferredWorkLocations': 'Preferred Work Locations:',
-        'availabilityToStart': 'Availability to Start:',
+        'ageTitle': 'Age: 21',
+        'preferredWorkLocations': 'Preferred Work Locations: Tehran',
         'remoteWork': 'Remote Work: Open to remote positions with occasional travel as required.',
+        'workInPerson': 'Work in person: Availability to Start from 2024-06-22 (۱۴۰۳/۰۴/۰۲)',
         'militaryServiceStatus': 'Military Service Status: Mashmool',
         'maritalStatus': 'Marital Status: Single',
 
@@ -91,9 +90,9 @@ const texts = {
         'familiarityWith': 'آشنایی با: machine learning, compiler design, Hardware language, modular microservice design, Search Engines',
         'personalInfoTitle': 'اطلاعات شخصی:',
         'ageTitle': 'سن:',
-        'preferredWorkLocations': 'موقعیت‌های کار مورد علاقه:',
-        'availabilityToStart': 'قابلیت شروع:',
+        'preferredWorkLocations': 'موقعیت‌های کار مورد علاقه: تهران',
         'remoteWork': 'کار از راه دور:  در صورت لزوم به موقعیت های راه دور با سفرهای گاه به گاه مشکلی ندارم.',
+        'workInPerson': 'کار از راه دور: در دسترس بودن برای شروع از 2024-06-22 .',
         'militaryServiceStatus': 'وضعیت سربازی: مشمول',
         'maritalStatus': 'وضعیت تاهل: مجرد',
 
@@ -151,29 +150,39 @@ const texts = {
     }
 };
 
-// switch between languages
+
+
+const boldedTexts = {
+    'programmingLanguages': ['JavaScript'],
+    'frameworks': ['Laravel', 'Node.js', 'Tailwind CSS'],
+    'additionalSkills': ['Linux', ' SQL', 'REST APIs'],
+    'Personal Information': ['21', 'Tehran', 'Hardware language']
+};
+
 function changeLanguage(language) {
-    translateSection(language, 'heroSection');
-    translateSection(language, 'aboutMeSection');
-    translateSection(language, 'ExperienceSection');
-    translateSection(language, 'section1');
-    translateSection(language, 'section2');
-    translateSection(language, 'section3');
-    translateSection(language, 'EducationSection');
-    translateSection(language, 'ContactSection');
-    translateSection(language, 'FooterSection');
+    const sections = ['heroSection', 'aboutMeSection', 'ExperienceSection', 'section1', 'section2', 'section3', 'EducationSection', 'ContactSection', 'FooterSection'];
+    sections.forEach(section => translateSection(language, section));
 }
 
-
-// translate a specific section
 function translateSection(language, sectionId) {
     const elements = document.querySelectorAll(`#${sectionId} [data-translate]`);
     elements.forEach(element => {
         const key = element.getAttribute('data-translate');
-        element.textContent = texts[language][key];
+        let translatedText = texts[language][key];
+
+        if (boldedTexts[key]) {
+            const boldedText = boldedTexts[key].join('|');
+            const regex = new RegExp(`(${boldedText})`, 'g');
+            translatedText = translatedText.replace(regex, '<strong>$1</strong>');
+        }
+
+        element.innerHTML = translatedText;
     });
 
-    // Toggle the RTL class based on the selected language
+    toggleRTL(sectionId, language);
+}
+
+function toggleRTL(sectionId, language) {
     const section = document.getElementById(sectionId);
     if (language === 'fa') {
         section.classList.add('rtl');
@@ -181,4 +190,3 @@ function translateSection(language, sectionId) {
         section.classList.remove('rtl');
     }
 }
-
