@@ -6,17 +6,18 @@ const texts = {
         'resume': 'Resume',
 
         'aboutMeTitle': 'About Me',
-        'aboutMeIntro': 'I am a dedicated Backend Developer with a proven track record of two years, focusing on self-directed projects. I possess a passion for problem-solving and am currently pursuing an undergraduate degree in software engineering at Nit Babol University.',
+        'aboutMeIntro': 'I am a dedicated Backend Developer with a proven track record of two years, focusing on self-directed projects. I possess a passion for problem-solving and I have graduated with an undergraduate degree in software engineering from Nit Babol University.',
         'specializationTitle': 'My areas of specialization include:',
-        'programmingLanguages': 'Programming Languages: JavaScript, Python',
-        'frameworks': 'Frameworks: Laravel, Node.js, Tailwind CSS, React.js, Vue.js, Alpine.js',
-        'additionalSkills': 'Additional Skills: Linux, SQL & NoSQL databases, Unit Testing, Caching, REST APIs, JavaFx, PyQt',
-        'familiarityWith': 'Familiarity with: machine learning, compiler design, Hardware language, modular microservice design, Search Engines',
+        'programmingLanguages': 'JavaScript: Async/Await, jQuery',
+        'frameworks': 'Frameworks: Laravel, Node.js, Tailwind CSS, Vue.js',
+        'additionalSkills': 'Additional Skills: Linux(File System, bash script), SQL & NoSQL databases, Unit Testing, Caching, REST APIs, JavaFx, PyQt',
+        'familiarityWith': 'Familiarity with: machine learning, compiler design, Hardware language, modular microservice design, Search Engines(Elasticsearch)',
         'personalInfoTitle': 'Personal Information:',
-        'ageTitle': 'Age: 21',
+        'ageTitle': 'Age: 22',
+        'degree': 'Degree: Bachelor of Science in Computer Software Engineering',
         'preferredWorkLocations': 'Preferred Work Locations: Tehran',
         'remoteWork': 'Remote Work: Open to remote positions with occasional travel as required.',
-        'workInPerson': 'Work in person: Availability to Start from 2024-06-22 (۱۴۰۳/۰۴/۰۲)',
+        'workInPerson': 'Work in person: Availability to Start from 2024-07-08 (۱۴۰۳/۰۴/۱۸)',
         'militaryServiceStatus': 'Military Service Status: Mashmool',
         'maritalStatus': 'Marital Status: Single',
 
@@ -82,17 +83,18 @@ const texts = {
         'resume': 'رزومه',
 
         'aboutMeTitle': 'درباره من',
-        'aboutMeIntro': 'من یک توسعه دهنده اختصاصی Backend با سابقه اثبات شده دو ساله هستم که بر روی پروژه های خودگردان تمرکز دارد. من علاقه زیادی به حل مسئله دارم و در حال حاضر در حال تحصیل در مقطع کارشناسی در رشته مهندسی نرم افزار در دانشگاه نیت بابل هستم.',
+        'aboutMeIntro': 'من یک توسعه دهنده اختصاصی Backend با سابقه اثبات شده دو ساله هستم که بر روی پروژه های خودگردان تمرکز دارد. من علاقه زیادی به حل مسئله دارم و فارغ التحصیل مقطع کارشناسی مهندسی نرم افزار از دانشگاه صنعتی نوشیروانی بابل هستم.',
         'specializationTitle': 'زمینه های تخصصی من عبارتند از:',
-        'programmingLanguages': 'زبان‌های برنامه‌نویسی: JavaScript, Python',
-        'frameworks': 'فریم ورک ها: Laravel, Node.js, Tailwind CSS, React.js, Vue.js, Alpine.js',
-        'additionalSkills': 'مهارت‌های اضافی: Linux, SQL & NoSQL databases, Unit Testing, Caching, REST APIs, JavaFx, PyQt',
-        'familiarityWith': 'آشنایی با: machine learning, compiler design, Hardware language, modular microservice design, Search Engines',
+        'programmingLanguages': 'جاواسکریپت: Async/Await, jQuery',
+        'frameworks': 'فریم ورک ها: Laravel, Node.js, Tailwind CSS, Vue.js ',
+        'additionalSkills': 'مهارت‌های اضافی: Linux(File System, bash script), SQL & NoSQL databases, Unit Testing, Caching, REST APIs, JavaFx, PyQt',
+        'familiarityWith': 'آشنایی با: machine learning, compiler design, Hardware language, modular microservice design, Search Engines(Elasticsearch)',
         'personalInfoTitle': 'اطلاعات شخصی:',
-        'ageTitle': 'سن:',
+        'ageTitle': 'سن: 22',
+        'degree': 'مدرک تحصیلی: لیسانس مهندسی نرم افزار کامپیوتر',
         'preferredWorkLocations': 'موقعیت‌های کار مورد علاقه: تهران',
         'remoteWork': 'کار از راه دور:  در صورت لزوم به موقعیت های راه دور با سفرهای گاه به گاه مشکلی ندارم.',
-        'workInPerson': 'کار از راه دور: در دسترس بودن برای شروع از 2024-06-22 .',
+        'workInPerson': 'کار به صورت حضوری: در دسترس بودن برای شروع از ۱۴۰۳/۰۴/۱۸ .',
         'militaryServiceStatus': 'وضعیت سربازی: مشمول',
         'maritalStatus': 'وضعیت تاهل: مجرد',
 
@@ -151,12 +153,20 @@ const texts = {
 };
 
 
-
 const boldedTexts = {
-    'programmingLanguages': ['JavaScript'],
     'frameworks': ['Laravel', 'Node.js', 'Tailwind CSS'],
     'additionalSkills': ['Linux', ' SQL', 'REST APIs'],
-    'Personal Information': ['21', 'Tehran', 'Hardware language']
+    'Age': ['22'],
+    'Degree': ['Bachelor of Science'],
+    'مدرک تحصیلی': ['لیسانس'],
+    'Location': ['Tehran'],
+    'موقعیت‌های کار مورد علاقه': ['تهران'],
+    'Date of Birth': ['۱۴۰۳/۰۴/۱۸'],
+    'Remote Work': ['Open to remote'],
+    'Military Service Status': ['Mashmool'],
+    'وضعیت سربازی': ['مشمول'],
+    'Marital Status': ['Single'],
+    'وضعیت تاهل': ['مجرد'],
 };
 
 function changeLanguage(language) {
@@ -170,11 +180,19 @@ function translateSection(language, sectionId) {
         const key = element.getAttribute('data-translate');
         let translatedText = texts[language][key];
 
-        if (boldedTexts[key]) {
-            const boldedText = boldedTexts[key].join('|');
-            const regex = new RegExp(`(${boldedText})`, 'g');
-            translatedText = translatedText.replace(regex, '<strong>$1</strong>');
+        for (const key in boldedTexts) {
+            if (boldedTexts.hasOwnProperty(key)) {
+                let boldedText = '';
+                if (Array.isArray(boldedTexts[key])) {
+                    boldedText = boldedTexts[key].join('|');
+                } else {
+                    boldedText = boldedTexts[key];
+                }
+                const regex = new RegExp(`(${boldedText})`, 'g');
+                translatedText = translatedText.replace(regex, '<strong>$1</strong>');
+            }
         }
+
 
         element.innerHTML = translatedText;
     });
