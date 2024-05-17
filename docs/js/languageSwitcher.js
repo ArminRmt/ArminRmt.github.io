@@ -6,29 +6,45 @@ const texts = {
         'resume': 'Resume',
 
         'aboutMeTitle': 'About Me',
-        'aboutMeIntro': 'I am a dedicated Backend Developer with a proven track record of two years, focusing on self-directed projects. I possess a passion for problem-solving and I have graduated with an undergraduate degree in software engineering from Nit Babol University.',
+        'aboutMeIntro': 'I am an enthusiastic <strong>Backend</strong> Developer with a <strong>two-year</strong> history of\n' +
+            '            self-guided\n' +
+            '            projects. <br>\n' +
+            '\n' +
+            '            My passion for addressing complex problems has strengthened my ability to collaborate in a team and learn\n' +
+            '            new technologies.<br>\n' +
+            '\n' +
+            '            I possess a passion for problem-solving and continuously broadening my skill set to strive towards becoming\n' +
+            '            a versatile professional. <br>\n' +
+            '\n' +
+            '            I have <strong>graduated</strong> with an undergraduate degree in Software Engineering from NIT Babol\n' +
+            '            University.<br><br>\n' +
+            '\n' +
+            '\n' +
+            '            Beyond the world of coding, I maintain a harmonious lifestyle by listening to podcasts, engaging in regular\n' +
+            '            fitness activities, and channeling my creativity through the guitar, culminating in a fulfilling and\n' +
+            '            balanced life.',
         'specializationTitle': 'My areas of specialization include:',
         'programmingLanguages': 'JavaScript: Async/Await, jQuery',
-        'frameworks': 'Frameworks: Laravel, Node.js, Tailwind CSS, Vue.js',
-        'additionalSkills': 'Additional Skills: Linux(File System, bash script), SQL & NoSQL databases, Unit Testing, Caching, REST APIs, JavaFx, PyQt',
+        'frameworks': 'Frameworks: Prior Stack: Laravel, Current Stack: <strong>Node.js(Express,ES6,PM2)</strong>, Tailwind CSS, Vue.js',
+        'additionalSkills': 'Additional Skills: Linux(File System, bash script), <strong>SQL(PostgreSQL,MySQL)</strong> & NoSQL databases, Unit Testing, Caching, REST APIs, JavaFx, PyQt',
         'familiarityWith': 'Familiarity with: machine learning, compiler design, Hardware language, modular microservice design, Search Engines(Elasticsearch)',
         'personalInfoTitle': 'Personal Information:',
         'ageTitle': 'Age: 22',
         'degree': 'Degree: Bachelor of Science in Computer Software Engineering',
         'preferredWorkLocations': 'Preferred Work Locations: Tehran',
-        'remoteWork': 'Remote Work: Open to remote positions with occasional travel as required.',
+        'remoteWork': 'Remote Work: Open to remote positions with occasional travel as required',
         'workInPerson': 'Work in person: Availability to Start from 2024-07-08 (۱۴۰۳/۰۴/۱۸)',
         'militaryServiceStatus': 'Military Service Status: Mashmool',
-        'maritalStatus': 'Marital Status: Single',
+        // 'maritalStatus': 'Marital Status: Single',
 
         'experienceTitle': 'Experience',
         'internshipTitle': 'Internship - Babol Noshirvani University of Technology',
         'teachingAssistantTitle': 'Teaching Assistant - Babol Noshirvani University of Technology',
         'dateRange1': 'Jan 2023 - Mar 2023',
         'dateRange2': 'Apr 2022 - Jan 2022',
-        'internshipDescription': 'Contributed as a backend programmer within a team for a startup project, focusing on Node.js and Docker. Developed a buyer\'s request management system and implemented geolocation features for locating the nearest car spare parts.',
+        'internshipDescription': 'Contributed as a backend programmer within a team for a startup project, focusing on Node.js and Docker Developed a buyer\'s request management system and implemented geolocation features for locating the nearest car spare parts',
         'internshipTags': ['Node.js', 'Docker', 'Socket.io', 'Geolocation', 'REST API', 'React.js'],
-        'teachingAssistantDescription': 'Instructed students on fundamental networking concepts, protocols, and technologies, including TCP/IP, DNS, DHCP, VLANs, and routing protocols. Provided practical guidance on network simulation tools such as Cisco Packet Tracer and Wireshark.',
+        'teachingAssistantDescription': 'Instructed students on fundamental networking concepts, protocols, and technologies, including TCP/IP, DNS, DHCP, VLANs, and routing protocols Provided practical guidance on network simulation tools such as Cisco Packet Tracer and Wireshark',
         'teachingAssistantTags': ['IP Addressing', 'Routing', 'Firewalls', 'Network Security', 'Network Protocols (TCP/IP, UDP, ICMP, etc.)'],
 
         'projectsTitle': 'Projects',
@@ -83,11 +99,16 @@ const texts = {
         'resume': 'رزومه',
 
         'aboutMeTitle': 'درباره من',
-        'aboutMeIntro': 'من یک توسعه دهنده اختصاصی Backend با سابقه اثبات شده دو ساله هستم که بر روی پروژه های خودگردان تمرکز دارد. من علاقه زیادی به حل مسئله دارم و فارغ التحصیل مقطع کارشناسی مهندسی نرم افزار از دانشگاه صنعتی نوشیروانی بابل هستم.',
+        'aboutMeIntro': 'بنده یک توسعه دهنده مشتاق <strong>Backend</strong> با سابقه <strong>دو ساله</strong> پروژه های خود تعریف شده و فریلسنری هستم.<br>\n' +
+            'اشتیاق من برای پرداختن به مشکلات پیچیده توانایی من را برای همکاری در یک تیم و یادگیری فناوری های جدید تقویت کرده است.\n' +
+            'همین طور علاقه زیادی به حل مسئله دارم و به طور مداوم مجموعه مهارت های خود را برای تلاش برای تبدیل شدن به یک مهندس نرم افزار گسترش می دهم.<br>\n' +
+            'فارغ التحصیل کارشناسی مهندسی نرم افزار از دانشگاه NIT بابل می باشم.\n' +
+            '\n<br><br>' +
+            'فراتر از دنیای کدنویسی، من با گوش دادن به پادکست ها، درگیر شدن در فعالیت های تناسب اندام منظم و هدایت خلاقیتم از طریق گیتار، سبک زندگی هماهنگی را حفظ میکنم که به یک زندگی کامل و متعادل ختم میشود.',
         'specializationTitle': 'زمینه های تخصصی من عبارتند از:',
         'programmingLanguages': 'جاواسکریپت: Async/Await, jQuery',
-        'frameworks': 'فریم ورک ها: Laravel, Node.js, Tailwind CSS, Vue.js ',
-        'additionalSkills': 'مهارت‌های اضافی: Linux(File System, bash script), SQL & NoSQL databases, Unit Testing, Caching, REST APIs, JavaFx, PyQt',
+        'frameworks': 'فریم ورک ها: Prior Stack: Laravel, Current Stack: <strong>Node.js(Express,ES6,PM2)</strong>, Tailwind CSS, Vue.js ',
+        'additionalSkills': 'مهارت‌های اضافی: Linux(File System, bash script), <strong>SQL(PostgreSQL,MySQL)</strong> & NoSQL databases, Unit Testing, Caching, REST APIs, JavaFx, PyQt',
         'familiarityWith': 'آشنایی با: machine learning, compiler design, Hardware language, modular microservice design, Search Engines(Elasticsearch)',
         'personalInfoTitle': 'اطلاعات شخصی:',
         'ageTitle': 'سن: 22',
@@ -96,7 +117,7 @@ const texts = {
         'remoteWork': 'کار از راه دور:  در صورت لزوم به موقعیت های راه دور با سفرهای گاه به گاه مشکلی ندارم.',
         'workInPerson': 'کار به صورت حضوری: در دسترس بودن برای شروع از ۱۴۰۳/۰۴/۱۸ .',
         'militaryServiceStatus': 'وضعیت سربازی: مشمول',
-        'maritalStatus': 'وضعیت تاهل: مجرد',
+        // 'maritalStatus': 'وضعیت تاهل: مجرد',
 
         'experienceTitle': 'تجربه ها',
         'internshipTitle': 'کارآموزی - دانشگاه صنعتی نوشیروانی بابل',
