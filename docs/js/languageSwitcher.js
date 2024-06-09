@@ -6,18 +6,11 @@ const texts = {
         'resume': 'Resume',
 
         'aboutMeTitle': 'About Me',
-        'aboutMeIntro': 'I am an enthusiastic <strong>Backend</strong> Developer with a <strong>two-year</strong> history of\n' +
-            '            self-guided\n' +
-            '            projects. <br>\n' +
-            '\n' +
-            '            My passion for addressing complex problems has strengthened my ability to collaborate in a team and learn\n' +
-            '            new technologies.<br>\n' +
-            '\n' +
-            '            I possess a passion for problem-solving and continuously broadening my skill set to strive towards becoming\n' +
-            '            a versatile professional. <br>\n' +
-            '\n' +
-            '            I have <strong>graduated</strong> with an undergraduate degree in Software Engineering from NIT Babol\n' +
-            '            University.<br><br>\n' +
+        'aboutMeIntro': 'Motivated person with <strong>2</strong> years of experience in developing web applications and APIs.<br>\n' +
+            '            Diligent in solving complex problems, collaborating effectively within teams, and learning new technologies.<br>\n' +
+            '            Currently, studying system design and architecture, focusing on developing scalable, high-performing, and\n' +
+            '            clean code optimized\n' +
+            '            for data storage solutions.<br><br>' +
             '\n' +
             '\n' +
             '            Beyond the world of coding, I maintain a harmonious lifestyle by listening to podcasts, engaging in regular\n' +
@@ -99,10 +92,9 @@ const texts = {
         'resume': 'رزومه',
 
         'aboutMeTitle': 'درباره من',
-        'aboutMeIntro': 'بنده یک توسعه دهنده مشتاق <strong>Backend</strong> با سابقه <strong>دو ساله</strong> پروژه های خود تعریف شده و فریلسنری هستم.<br>\n' +
-            'اشتیاق من برای پرداختن به مشکلات پیچیده توانایی من را برای همکاری در یک تیم و یادگیری فناوری های جدید تقویت کرده است.\n' +
-            'همین طور علاقه زیادی به حل مسئله دارم و به طور مداوم مجموعه مهارت های خود را برای تلاش برای تبدیل شدن به یک مهندس نرم افزار گسترش می دهم.<br>\n' +
-            'فارغ التحصیل کارشناسی مهندسی نرم افزار از دانشگاه NIT بابل می باشم.\n' +
+        'aboutMeIntro': 'فردی با انگیزه با 2 سال سابقه در توسعه برنامه های کاربردی وب و API\n' +
+            'کوشا در حل مشکلات پیچیده، همکاری موثر در تیم ها و یادگیری تکنولوژی های جدید\n' +
+            'در حال حاضر، در حال مطالعه طراحی و معماری سیستم، با تمرکز بر توسعه کد مقیاس پذیر، با کارایی بالا و تمیز بهینه شده برای راه حل های ذخیره سازی داده ها' +
             '\n<br><br>' +
             'فراتر از دنیای کدنویسی، من با گوش دادن به پادکست ها، درگیر شدن در فعالیت های تناسب اندام منظم و هدایت خلاقیتم از طریق گیتار، سبک زندگی هماهنگی را حفظ میکنم که به یک زندگی کامل و متعادل ختم میشود.',
         'specializationTitle': 'زمینه های تخصصی من عبارتند از:',
