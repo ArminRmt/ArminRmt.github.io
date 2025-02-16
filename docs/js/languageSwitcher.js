@@ -46,6 +46,9 @@ const texts = {
         'storeLocatorButton': 'Domain',
         'compilerTitle': 'Compiler',
         'compilerDescription': 'Python-based compiler that can generate intermediate code from input files, perform semantic analysis, and optimize code through register allocation.',
+        'paletteTitle': 'palette',
+        'paletteDescription': 'AI-driven platform for online business management and social media engagement. It unifies inventory data from multiple sources for real-time insights, boosting efficiency, lowering support costs, and enhancing customer satisfaction.',
+        
         'compilerButton': 'View Project',
 
         'laravelBlogTitle': 'Laravel Blog',
@@ -104,7 +107,7 @@ const texts = {
         'familiarityWith': 'آشنایی با: machine learning, compiler design, Hardware language, modular microservice design, Search Engines(Elasticsearch)',
         'personalInfoTitle': 'اطلاعات شخصی:',
         'ageTitle': 'سن: 22',
-        'degree': 'مدرک تحصیلی: لیسانس مهندسی نرم افزار کامپیوتر',
+        'degree': 'مدرک تحصیلی: کارشناسی ارشد مهندسی کامپیوتر امنیت سایبری',
         'preferredWorkLocations': 'موقعیت‌های کار مورد علاقه: تهران',
         'remoteWork': 'کار از راه دور:  در صورت لزوم به موقعیت های راه دور با سفرهای گاه به گاه مشکلی ندارم.',
         'workInPerson': 'کار به صورت حضوری: در دسترس بودن برای شروع از ۱۴۰۳/۰۴/۱۸ .',
@@ -112,13 +115,13 @@ const texts = {
         // 'maritalStatus': 'وضعیت تاهل: مجرد',
 
         'experienceTitle': 'تجربه ها',
-        'internshipTitle': 'کارآموزی - دانشگاه صنعتی نوشیروانی بابل',
-        'teachingAssistantTitle': 'استادیار - دانشگاه صنعتی نوشیروانی بابل',
+        'internshipTitle': 'برنامه نویس بک اند - دانشگاه صنعتی امیرکبیر تهران',
+        'teachingAssistantTitle': 'برنامه نویس بک اند',
         'dateRange1': 'فروردین 1402 - اردیبهشت 1402',
         'dateRange2': 'فروردین 1401 - دی 1400',
-        'internshipDescription': 'به عنوان یک برنامه نویس باطن در یک تیم برای یک پروژه راه اندازی، با تمرکز بر Node.js و Docker مشارکت کرد. سیستم مدیریت درخواست خریدار را توسعه داد و ویژگی های موقعیت جغرافیایی را برای مکان یابی نزدیکترین قطعات یدکی خودرو پیاده سازی کرد.',
+        'internshipDescription': 'کاراموزی سیستم مدیریت درخواست خریدار با موقعیت جغرافیایی برای مکان یابی قطعات یدکی خودرو در نزدیکی، و پیاده سازی یک سیستم اطلاع رسانی و صف پیام با حافظه کارآمد با استفاده از مدل publish-subscribe. توسعه دهنده backend (node ​​js)',
         'internshipTags': ['Node.js', 'Docker', 'Socket.io', 'Geolocation', 'REST API', 'React.js'],
-        'teachingAssistantDescription': 'به دانش آموزان مفاهیم، پروتکل ها و فناوری های اساسی شبکه، از جمله TCP/IP، DNS، DHCP، VLAN و پروتکل های مسیریابی آموزش داده شد. ارائه راهنمایی عملی در مورد ابزارهای شبیه سازی شبکه مانند Cisco Packet Tracer و Wireshark',
+        'teachingAssistantDescription': 'توسعه وب اسکرپر و ربات چت. APIهای فیس‌بوک/اینستاگرام برای رسانه‌های اجتماعی با استفاده از شیوه‌های clean code و الگوی طراحی مدیریت وظایف ناهمزمان با استفاده از BullMQ، همین طور transactions, and promises. شرکت در code reviews برای حفظ کیفیت بالای کد شرکت کرد. تست های unit/E2E  و لاگ پرومتئوس برای همه ماژول‌ها اجرا شده است. نقش: توسعه دهنده بک اند (node ​​js)',
         'teachingAssistantTags': ['آدرس دهی IP', 'مسیریابی', 'دیواره های آتش', 'امنیت شبکه', 'پروتکل های شبکه (TCP/IP، UDP، ICMP، و غیره)'],
 
         'projectsTitle': 'پروژه‌ها',
@@ -126,6 +129,9 @@ const texts = {
         'storeLocatorDescription': 'این سیستم خریداران قطعات را قادر می سازد تا درخواست قطعات خاص را به فروشگاه های قطعات یدکی ارسال کنند. فروشندگان بر اساس موجودی خود پاسخ می دهند. خریداران می توانند پاسخ ها را ردیابی کنند و مکان های فروشنده را روی نقشه مشاهده کنند. این سیستم همچنین کوتاه ترین مسیر را از محل خریدار به فروشگاه نمایش می دهد.',
         'storeLocatorButton': 'دامنه',
         'compilerTitle': 'کامپایلر',
+        'paletteTitle': 'پلت',
+        'paletteDescription': 'پلت فرم مبتنی بر هوش مصنوعی برای مدیریت کسب و کار آنلاین و تعامل با رسانه های اجتماعی. داده های موجودی را از منابع متعدد برای بینش در زمان واقعی، افزایش کارایی، کاهش هزینه های پشتیبانی و افزایش رضایت مشتری یکپارچه می کند.',
+
         'compilerDescription': 'کامپایلر مبتنی بر پایتون که می تواند کد میانی را از فایل های ورودی تولید کند، تجزیه و تحلیل معنایی را انجام دهد و کد را از طریق تخصیص رجیستر بهینه کند.',
         'compilerButton': 'مشاهده پروژه',
 

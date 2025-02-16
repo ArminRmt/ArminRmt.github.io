@@ -1,569 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>devFolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="icon" href="favicon.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="css/main.bundle.css"/>
-    <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
-    <script src="./js/languageSwitcher.js" defer></script>
-</head>
-
-<body>
-
-
-<!------------------        nav bar        ------------------>
-
-<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <div class="navbar-item is-hidden-desktop">
-            <a href="https://github.com/ArminRmt" class="icon is-large has-text-light">
-                <i class="fab fa-2x fa-github"></i>
-            </a>
-        </div>
-    </div>
-    <div class="navbar-menu" style="background-color: #5d0e41">
-        <div class="navbar-end">
-            <div class="navbar-item">
-                <a href="https://github.com/ArminRmt" class="icon is-large has-text-light">
-                    <i class="fab fa-2x fa-github"></i>
-                </a>
+   <head>
+      <title>devFolio</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <link rel="icon" href="favicon.png" type="image/x-icon"/>
+      <link rel="stylesheet" href="css/main.bundle.css"/>
+      <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
+      <script src="./js/languageSwitcher.js" defer></script>
+   </head>
+   <body>
+      <!------------------        nav bar        ------------------>
+      <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+         <div class="navbar-brand">
+            <div class="navbar-item is-hidden-desktop">
+               <a href="https://github.com/ArminRmt" class="icon is-large has-text-light">
+               <i class="fab fa-2x fa-github"></i>
+               </a>
             </div>
-            <!-- Language change menu -->
-            <div class="navbar-item has-dropdown is-hoverable" id="language-dropdown">
-                <a class="navbar-link">
-                    Language
-                </a>
-                <div class="navbar-dropdown language-dropdown">
-                    <a href="#" class="navbar-item" onclick="changeLanguage('en')">
-                        English
-                    </a>
-                    <a href="#" class="navbar-item" onclick="changeLanguage('fa')">
-                        Persian
-                    </a>
-                </div>
+         </div>
+         <div class="navbar-menu" style="background-color: #5d0e41">
+            <div class="navbar-end">
+               <div class="navbar-item">
+                  <a href="https://github.com/ArminRmt" class="icon is-large has-text-light">
+                  <i class="fab fa-2x fa-github"></i>
+                  </a>
+               </div>
+               <!-- Language change menu -->
+               <div class="navbar-item has-dropdown is-hoverable" id="language-dropdown">
+                  <a class="navbar-link">
+                  Language
+                  </a>
+                  <div class="navbar-dropdown language-dropdown">
+                     <a href="#" class="navbar-item" onclick="changeLanguage('en')">
+                     English
+                     </a>
+                     <a href="#" class="navbar-item" onclick="changeLanguage('fa')">
+                     Persian
+                     </a>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-</nav>
-
-
-<!------------------        main baneer        ------------------>
-
-<section class="hero is-primary" id="heroSection">
-    <div class="hero-body" style="background-color: #9cafaa">
-        <!-- 9cafaa fec7b4 -->
-        <div class="container">
-            <div class="level">
-                <div class="level-item has-text-centered">
-                    <figure class="image is-128x128" style="margin-bottom: 30px">
+         </div>
+      </nav>
+      <!------------------        main baneer        ------------------>
+      <section class="hero is-primary" id="heroSection">
+         <div class="hero-body" style="background-color: #9cafaa">
+            <!-- 9cafaa fec7b4 -->
+            <div class="container">
+               <div class="level">
+                  <div class="level-item has-text-centered">
+                     <figure class="image is-128x128" style="margin-bottom: 30px">
                         <img class="is-rounded" src="img/me.jpg"/>
-                    </figure>
-                </div>
-            </div>
-            <div class="columns has-text-centered">
-                <div class="column">
-                    <h1 class="title is-1" data-translate="fullName">Armin Rahmati</h1>
-                    <h2 class="subtitle" data-translate="occupation" style="margin-top: 3px;">Backend Dev</h2>
-                    <p>
+                     </figure>
+                  </div>
+               </div>
+               <div class="columns has-text-centered">
+                  <div class="column">
+                     <h1 class="title is-1" data-translate="fullName">Armin Rahmati</h1>
+                     <h2 class="subtitle" data-translate="occupation" style="margin-top: 3px;">Backend Dev</h2>
+                     <p>
                         <a href="resumeEN.pdf" class="icon has-text-light">
-                            <i class="fas fa-file-pdf" style="margin-left: 5px;"></i> <!-- Adjust margin as needed -->
-                            <strong data-translate="resume">Resume</strong>
+                           <i class="fas fa-file-pdf" style="margin-left: 5px;"></i> <!-- Adjust margin as needed -->
+                           <strong data-translate="resume">Resume</strong>
                         </a>
-
-                    </p>
-                </div>
+                     </p>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-</section>
-
-
-<!------------------        About Me        ------------------>
-<section class="section" id="aboutMeSection">
-    <div class="container">
-        <h1 class="title" style="text-align: center;" data-translate="aboutMeTitle">About Me</h1>
-        <hr/>
-        <p data-translate="aboutMeIntro">
-
-            Motivated person with <strong>2</strong> years of experience in developing web applications and APIs.<br>
-            Diligent in solving complex problems, collaborating effectively within teams, and learning new technologies.<br>
-            Currently, studying system design and architecture, focusing on developing scalable, high-performing, and
-            clean code optimized
-            for data storage solutions.<br><br>
-
-
-            Beyond the world of coding, I maintain a harmonious lifestyle by listening to podcasts, engaging in regular
-            fitness activities, and channeling my creativity through the guitar, culminating in a fulfilling and
-            balanced life.
-        </p>
-        <br>
-        <p data-translate="specializationTitle">My areas of specialization include:</p>
-        <ul style="margin-left: 20px; list-style-type: disc;">
-            <li data-translate="programmingLanguages">JavaScript: Async/Await, jQuery
-
-            </li>
-            <li data-translate="frameworks">Frameworks: Prior Stack: <strong>Laravel</strong>, Current Stack: <strong>Node.js(Express,ES6,PM2)</strong>,
-                <strong>Tailwind
-                    CSS</strong>,
-                Vue.js
-            </li>
-            <li data-translate="additionalSkills">Additional Skills:
-                <strong>Linux(File System, bash script)</strong>,
-                <strong>SQL(PostgreSQL,MySQL)</strong> & NoSQL databases,
-                Unit Testing,
-                Caching,
-                <strong>REST APIs</strong>,
-                JavaFx, PyQt
-            </li>
-            <li data-translate="familiarityWith">Familiarity with: machine learning, compiler design, Hardware language,
-                <strong>modular microservice
-                    design</strong>, Search Engines(Elasticsearch)
-            </li>
-        </ul>
-        <br>
-        <p data-translate="personalInfoTitle">Personal Information:</p>
-        <ul style="margin-left: 20px; list-style-type: disc;">
-            <li data-translate="ageTitle">Age: <strong>22</strong></li>
-            <li data-translate="degree">Degree: I have a <strong>Masters degree</strong> in Computer cyber security
-            </li>
-
-            <li data-translate="preferredWorkLocations">Preferred Work Locations:
-                <strong>Tehran</strong>
-            </li>
-
-<!--            <li data-translate="workInPerson">Work in person: <strong>Availability to Start from-->
-<!--                2024-07-08 (۱۴۰۳/۰۴/۱۸)-->
-<!--            </strong></li>-->
-
-<!--            <li data-translate="remoteWork">Remote Work: <strong>Open to remote positions with-->
-<!--                occasional-->
-<!--                travel as required-->
-<!--            </strong></li>-->
-<!--            <li data-translate="militaryServiceStatus">Military Service Status: <strong> Mashmool</strong></li>-->
-        </ul>
-    </div>
-</section>
-
-
-<!------------------        Experience        ------------------>
-
-<section class="section" id="ExperienceSection">
-    <div class="container">
-        <h1 class="title" style="text-align: center;" data-translate="experienceTitle">Experience</h1>
-        <hr/>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="media">
-                    <div class="media-left">
+         </div>
+      </section>
+      <!------------------        About Me        ------------------>
+      <section class="section" id="aboutMeSection">
+         <div class="container">
+            <h1 class="title" style="text-align: center;" data-translate="aboutMeTitle">About Me</h1>
+            <hr/>
+            <p data-translate="aboutMeIntro">
+               Motivated person with <strong>3</strong> years of experience in developing web applications and APIs.<br>
+               Diligent in solving complex problems, collaborating effectively within teams, and learning new technologies.<br>
+               Currently studying cybersecurity at <strong>Amirkabir</strong> University.<br><br>
+               Beyond the world of coding, I maintain a harmonious lifestyle by listening to podcasts, engaging in regular
+               fitness activities, and channeling my creativity through the guitar, culminating in a fulfilling and
+               balanced life.
+            </p>
+            <br>
+            <p data-translate="specializationTitle">My areas of specialization include:</p>
+            <ul style="margin-left: 20px; list-style-type: disc;">
+               <li data-translate="programmingLanguages">JavaScript: Async/Await, jQuery
+               </li>
+               <li data-translate="frameworks">Frameworks: <strong>Node.js(Express)</strong>,
+                  <strong>Tailwind
+                  CSS</strong>,
+                  Vue.js
+               </li>
+               <li data-translate="additionalSkills">Additional Skills:
+                  <strong>Linux(File System, bash script)</strong>,
+                  <strong>DBM(SQL: PostgreSQL, MySQL; NoSQL: Redis)
+                  </strong>
+                  Unit/e2e Testing,
+                  Message queues (BullMQ),
+                  Web Scraping,
+                  Socket.io,
+                  Docker,
+                  Git,
+                  <strong>REST APIs</strong>,
+                  JavaFx, PyQt
+               </li>
+               <li data-translate="familiarityWith">Familiarity with: machine learning, compiler design,
+                  <strong>modular microservice
+                  design</strong>, Search Engines(Elasticsearch),cryptography, blockchain
+               </li>
+            </ul>
+            <br>
+            <p data-translate="personalInfoTitle">Personal Information:</p>
+            <ul style="margin-left: 20px; list-style-type: disc;">
+               <li data-translate="ageTitle">Age: <strong>22</strong></li>
+               <li data-translate="degree">Degree: Im in <strong>Masters degree</strong> in Computer cyber security at Amirkabir University.
+               </li>
+               <li data-translate="preferredWorkLocations">Preferred Work Locations:
+                  <strong>Tehran</strong>
+               </li>
+               <!--            <li data-translate="workInPerson">Work in person: <strong>Availability to Start from-->
+               <!--                2024-07-08 (۱۴۰۳/۰۴/۱۸)-->
+               <!--            </strong></li>-->
+               <!--            <li data-translate="remoteWork">Remote Work: <strong>Open to remote positions with-->
+               <!--                occasional-->
+               <!--                travel as required-->
+               <!--            </strong></li>-->
+               <!--            <li data-translate="militaryServiceStatus">Military Service Status: <strong> Mashmool</strong></li>-->
+            </ul>
+         </div>
+      </section>
+      <!------------------        Experience        ------------------>
+      <section class="section" id="ExperienceSection">
+         <div class="container">
+            <h1 class="title" style="text-align: center;" data-translate="experienceTitle">Experience</h1>
+            <hr/>
+            <div class="card">
+               <div class="card-content">
+                  <div class="media">
+                     <div class="media-left">
                         <figure class="image is-48x48">
-                            <img src="data:image/jpeg;base64,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"
-                                 alt="University Logo"/>
+                           <img src="data:image/jpeg;base64,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"
+                              alt="University Logo"/>
                         </figure>
-                    </div>
-                    <div class="media-content">
+                     </div>
+                     <div class="media-content">
                         <p class="title is-4" data-translate="teachingAssistantTitle">Tasu Ventures</p>
-                        <p class="subtitle is-6" data-translate="dateRange2">Apr 2024- sep 2024</p>
-                    </div>
-                </div>
-                <div class="content" data-translate="teachingAssistantDescription">
-                    <ul>
+                        <p class="subtitle is-6" data-translate="dateRange2">Apr 2024 - oct 2024</p>
+                     </div>
+                  </div>
+                  <div class="content" data-translate="teachingAssistantDescription">
+                     <ul>
+                        <li>Developed a web scraper and chatbot.
+                        </li>
                         <li>
-                            Integrated social media functionalities using the Facebook API, implemented web scraping, and applied design
-                            patterns.
+                           Integrated Facebook/Instagram APIs for social media by applying clean code practices and design pattern
                         </li>
                         <li>Managed asynchronous tasks using BullMQ, transactions, and promises.
                         </li>
                         <li>
-                            Participated in code reviews to maintain high code quality.
+                           Participated in code reviews to maintain high code quality.
+                        </li>
+                        <li>Implemented unit/E2E tests and Prometheus logging for all modules.
                         </li>
                         <li>
-                            Role: backend developer
+                           Role: backend developer
                         </li>
-                    </ul>
-                </div>
+                     </ul>
+                  </div>
+               </div>
             </div>
-        </div>
-        <br>
-
-        <div class="card card-gap">
-            <div class="card-content">
-                <div class="media">
-                    <div class="media-left">
+            <br>
+            <div class="card card-gap">
+               <div class="card-content">
+                  <div class="media">
+                     <div class="media-left">
                         <figure class="image is-48x48">
-                            <img src="data:image/jpeg;base64,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"
-                                 alt="University Logo"/>
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/AKUT.svg"
+                              alt="University Logo"/>
                         </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-4" data-translate="internshipTitle">Internship - Babol Noshirvani University
-                            of Technology</p>
-                        <p class="subtitle is-6" data-translate="dateRange1">Jan 2023 - Mar 2023</p>
-                    </div>
-                </div>
-                <div class="content" data-translate="internshipDescription">
-
-                    <ul>
+                     </div>
+                     <div class="media-content">
+                        <p class="title is-4" data-translate="internshipTitle">Internship - Technology Development Center of Amirkabir University</p>
+                        <p class="subtitle is-6" data-translate="dateRange1">Jan 2023 - Apr 2023</p>
+                     </div>
+                  </div>
+                  <div class="content" data-translate="internshipDescription">
+                     <ul>
                         <li>
-                            Contributed as a backend programmer within a team for a startup project, focusing on Node.js
-                            and Docker
+                           Contributed as a backend programmer within a team for a startup project, focusing on Node.js
+                           and Docker
                         </li>
                         <li>Developed a buyer's request management system and implemented geolocation features for
-                            locating the nearest car spare parts
+                           locating the nearest car spare parts
                         </li>
-                    </ul>
-                    <div class="tags">
+                     </ul>
+                     <div class="tags">
+                        <span class="tag">Typescript
+                        </span>
                         <span class="tag">Node.js</span>
                         <span class="tag">Docker</span>
                         <span class="tag">Socket.io</span>
                         <span class="tag">Geolocation</span>
-                        <span class="tag">REST API</span>
-                        <span class="tag">React.js</span>
-                    </div>
-                </div>
+                        <span class="tag">typeorm</span>
+                        <span class="tag">Web Scraping
+                        </span>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-
-
-    </div>
-</section>
-
-
-<!------------------        Projects        ------------------>
-
-
-<!------------------        section1        ------------------>
-
-<section class="section" id="section1">
-    <div class="container">
-        <h1 class="title" style="text-align: center;" data-translate="projectsTitle">Projects</h1>
-        <hr/>
-
-
-        <div class="tile is-ancestor">
-            <div class="tile is-vertical is-12">
-                <div class="tile">
-
-
-                    <div class="tile is-parent">
+         </div>
+      </section>
+      <!------------------        Projects        ------------------>
+      <!------------------        section1        ------------------>
+      <section class="section" id="section1">
+         <div class="container">
+            <h1 class="title" style="text-align: center;" data-translate="projectsTitle">Projects</h1>
+            <hr/>
+            <div class="tile is-ancestor">
+               <div class="tile is-vertical is-12">
+                  <div class="tile">
+                     <div class="tile is-parent">
                         <article class="tile is-child notification"
-                                 style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
-                            <p class="title has-text-centered" data-translate="storeLocatorTitle">Store Locator</p>
-                            <figure class="image is-3by2">
-                                <img class="modal-trigger non-clickable" data-target="project-modal"
-                                     src="img/storelocator.png" alt="Project Image" style="border-radius: 10px;">
-
-
-                            </figure>
-                            <div class="content" style="padding-top: 20px;">
-                                <p data-translate="storeLocatorDescription">
-                                    The system enables parts buyers to submit requests for specific parts to spare parts
-                                    stores. Sellers respond based on their inventory. Buyers can track responses and
-                                    view seller locations on a map. The system also displays the shortest route from the
-                                    buyer's location to the store.
-                                </p>
-                                <div class="has-text-centered" style="padding-top: 20px;">
-                                    <a href="https://localstorelocator.liara.run/" target="_blank"
-                                       class="button is-primary" data-translate="storeLocatorButton">Domain</a>
-                                </div>
-                            </div>
+                           style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                           <p class="title has-text-centered" data-translate="storeLocatorTitle">Store Locator</p>
+                           <figure class="image is-3by2">
+                              <img class="modal-trigger non-clickable" data-target="project-modal"
+                                 src="img/storelocator.png" alt="Project Image" style="border-radius: 10px;">
+                           </figure>
+                           <div class="content" style="padding-top: 20px;">
+                              <p data-translate="storeLocatorDescription">
+                                 The system enables parts buyers to submit requests for specific parts to spare parts
+                                 stores. Sellers respond based on their inventory. Buyers can track responses and
+                                 view seller locations on a map. The system also displays the shortest route from the
+                                 buyer's location to the store.
+                              </p>
+                              <div class="has-text-centered" style="padding-top: 20px;">
+                                 <a href="https://github.com/ArminRmt/Store-Locator" target="_blank"
+                                    class="button is-primary" data-translate="storeLocatorButton">Github</a>
+                              </div>
+                           </div>
                         </article>
-                    </div>
-
-
-                    <div class="tile is-parent">
+                     </div>
+                     <div class="tile is-parent">
                         <article class="tile is-child notification"
-                                 style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
-                            <p class="title has-text-centered" data-translate="compilerTitle">Compiler</p>
-                            <figure class="image is-3by2">
-                                <img class="modal-trigger non-clickable" data-target="project-modal" src="img/comp.png"
-                                     alt="Project Image" style="border-radius: 10px;">
-                            </figure>
-                            <div class="content" style="padding-top: 20px;">
-                                <p data-translate="compilerDescription">
-                                    Python-based compiler that can generate intermediate code from input files,
-                                    perform semantic analysis, and optimize code through register allocation.
-                                </p>
-                                <div class="has-text-centered" style="padding-top: 20px;">
-                                    <a href="https://github.com/ArminRmt/teslang-compiler" target="_blank"
-                                       class="button is-primary" data-translate="compilerButton">View Project</a>
-                                </div>
-                            </div>
+                           style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                           <p class="title has-text-centered" data-translate="paletteTitle">palette</p>
+                           <figure class="image is-3by2">
+                              <img class="modal-trigger non-clickable" data-target="project-modal" src="img/palette.png"
+                                 alt="Project Image" style="border-radius: 10px;">
+                           </figure>
+                           <div class="content" style="padding-top: 20px;">
+                              <p data-translate="paletteDescription">
+                                 AI-driven platform for online business management and social media engagement. It unifies inventory data from multiple sources for real-time insights, boosting efficiency, lowering support costs, and enhancing customer satisfaction.
+                              </p>
+                              <div class="has-text-centered" style="padding-top: 20px;">
+                                 <a href="https://palette-tech.io/" target="_blank"
+                                    class="button is-primary" data-translate="compilerButton">Visit</a>
+                              </div>
+                           </div>
                         </article>
-                    </div>
-
-
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-
-    </div>
-</section>
-
-
-<!------------------        section2        ------------------>
-
-<section class="section" id="section2">
-    <div class="container">
-
-
-        <div class="tile is-ancestor">
-            <div class="tile is-vertical is-12">
-                <div class="tile">
-
-                    <div class="tile is-parent">
+         </div>
+      </section>
+      <!------------------        section2        ------------------>
+      <section class="section" id="section2">
+         <div class="container">
+            <div class="tile is-ancestor">
+               <div class="tile is-vertical is-12">
+                  <div class="tile">
+                     <div class="tile is-parent">
                         <article class="tile is-child notification"
-                                 style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
-                            <p class="title has-text-centered" data-translate="laravelBlogTitle">Laravel Blog</p>
-                            <figure class="image is-3by2">
-                                <img class="modal-trigger non-clickable" data-target="project-modal"
-                                     src="img/laravelBlog.png" alt="" style="border-radius: 10px;">
-                            </figure>
-                            <div class="content" style="padding-top: 20px;">
-                                <div class="tags" style="display: flex; justify-content: center; margin-bottom: 20px;">
-                                    <span class="tag"
-                                          style="background-color: #FDAF7B; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Laravel</span>
-                                    <span class="tag"
-                                          style="background-color: #FDAF7B; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Tailwind</span>
-                                    <span class="tag"
-                                          style="background-color: #FDAF7B; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Livewire</span>
-                                    <span class="tag"
-                                          style="background-color: #FDAF7B; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Jetstream</span>
-                                    <span class="tag"
-                                          style="background-color: #FDAF7B; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Scout</span>
-                                </div>
-                                <div class="has-text-centered">
-                                    <a href="https://github.com/ArminRmt/LaravelBLog" target="_blank"
-                                       class="button is-primary"
-                                       style="padding: 10px 20px; color: #fff; border: none; border-radius: 5px; text-decoration: none;"
-                                       data-translate="laravelBlogButton">View
-                                        Project</a>
-                                </div>
-                            </div>
+                           style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                           <p class="title has-text-centered" data-translate="laravelBlogTitle">Laravel Blog</p>
+                           <figure class="image is-3by2">
+                              <img class="modal-trigger non-clickable" data-target="project-modal"
+                                 src="img/laravelBlog.png" alt="" style="border-radius: 10px;">
+                           </figure>
+                           <div class="content" style="padding-top: 20px;">
+                              <div class="tags" style="display: flex; justify-content: center; margin-bottom: 20px;">
+                                 <span class="tag"
+                                    style="background-color: #FDAF7B; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Laravel</span>
+                                 <span class="tag"
+                                    style="background-color: #FDAF7B; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Tailwind</span>
+                                 <span class="tag"
+                                    style="background-color: #FDAF7B; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Livewire</span>
+                                 <span class="tag"
+                                    style="background-color: #FDAF7B; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Jetstream</span>
+                                 <span class="tag"
+                                    style="background-color: #FDAF7B; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Scout</span>
+                              </div>
+                              <div class="has-text-centered">
+                                 <a href="https://github.com/ArminRmt/LaravelBLog" target="_blank"
+                                    class="button is-primary"
+                                    style="padding: 10px 20px; color: #fff; border: none; border-radius: 5px; text-decoration: none;"
+                                    data-translate="laravelBlogButton">View
+                                 Project</a>
+                              </div>
+                           </div>
                         </article>
-                    </div>
-
-
-                    <div class="tile is-parent">
+                     </div>
+                     <div class="tile is-parent">
                         <article class="tile is-child notification"
-                                 style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
-                            <p class="title has-text-centered" data-translate="ecommerceTitle">Ecommerce</p>
-                            <figure class="image is-3by2">
-                                <img class="modal-trigger non-clickable" data-target="project-modal" src="img/shop.png"
-                                     alt="Project Image" style="border-radius: 10px;">
-                            </figure>
-                            <div class="content" style="padding-top: 20px;">
-                                <p data-translate="ecommerceDescription">
-                                    Multilingual and dynamic, order tracking, inventory management, role and access
-                                    level management, product return and discount sections, rating and review, payment
-                                    gateway, wishlist functionality, shopping cart, user and admin panel.
-                                </p>
-                                <div class="has-text-centered" style="padding-top: 20px;">
-                                    <a href="https://github.com/ArminRmt/Laravel-ecommerce" target="_blank"
-                                       class="button is-primary" data-translate="ecommerceButton">View Project</a>
-                                </div>
-                            </div>
+                           style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                           <p class="title has-text-centered" data-translate="ecommerceTitle">Ecommerce</p>
+                           <figure class="image is-3by2">
+                              <img class="modal-trigger non-clickable" data-target="project-modal" src="img/shop.png"
+                                 alt="Project Image" style="border-radius: 10px;">
+                           </figure>
+                           <div class="content" style="padding-top: 20px;">
+                              <p data-translate="ecommerceDescription">
+                                 Multilingual and dynamic, order tracking, inventory management, role and access
+                                 level management, product return and discount sections, rating and review, payment
+                                 gateway, wishlist functionality, shopping cart, user and admin panel.
+                              </p>
+                              <div class="has-text-centered" style="padding-top: 20px;">
+                                 <a href="https://github.com/ArminRmt/Laravel-ecommerce" target="_blank"
+                                    class="button is-primary" data-translate="ecommerceButton">View Project</a>
+                              </div>
+                           </div>
                         </article>
-                    </div>
-
-
-                    <div class="tile is-parent">
+                     </div>
+                     <div class="tile is-parent">
                         <article class="tile is-child notification"
-                                 style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
-                            <p class="title has-text-centered" data-translate="gitBranchTitle">Git branch</p>
-                            <figure class="image is-3by2">
-                                <img class="modal-trigger non-clickable" data-target="project-modal" src="img/git.png"
-                                     alt=""
-                                     style="border-radius: 10px; max-height: 100%; max-width: 100%; object-fit: contain;">
-                            </figure>
-
-                            <div class="content" style="padding-top: 20px;">
-                                <div class="tags" style="display: flex; justify-content: center; margin-bottom: 20px;">
-                                    <p data-translate="gitBranchDescription">
-                                        Implementing Git branching concepts graphically, offering hands-on experience in
-                                        managing version control within a simulated environment.
-                                    </p>
-                                    <span class="tag"
-                                          style="background-color: #FDAF7B; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">JavaFx</span>
-                                </div>
-                                <div class="has-text-centered">
-                                    <a href="https://github.com/ArminRmt/learn-git-branching/tree/master"
-                                       target="_blank" class="button is-primary"
-                                       style="padding: 10px 20px; color: #fff; border: none; border-radius: 5px; text-decoration: none;"
-                                       data-translate="gitBranchButton">View
-                                        Project</a>
-                                </div>
-                            </div>
+                           style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                           <p class="title has-text-centered" data-translate="gitBranchTitle">Git branch</p>
+                           <figure class="image is-3by2">
+                              <img class="modal-trigger non-clickable" data-target="project-modal" src="img/git.png"
+                                 alt=""
+                                 style="border-radius: 10px; max-height: 100%; max-width: 100%; object-fit: contain;">
+                           </figure>
+                           <div class="content" style="padding-top: 20px;">
+                              <div class="tags" style="display: flex; justify-content: center; margin-bottom: 20px;">
+                                 <p data-translate="gitBranchDescription">
+                                    Implementing Git branching concepts graphically, offering hands-on experience in
+                                    managing version control within a simulated environment.
+                                 </p>
+                                 <span class="tag"
+                                    style="background-color: #FDAF7B; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">JavaFx</span>
+                              </div>
+                              <div class="has-text-centered">
+                                 <a href="https://github.com/ArminRmt/learn-git-branching/tree/master"
+                                    target="_blank" class="button is-primary"
+                                    style="padding: 10px 20px; color: #fff; border: none; border-radius: 5px; text-decoration: none;"
+                                    data-translate="gitBranchButton">View
+                                 Project</a>
+                              </div>
+                           </div>
                         </article>
-                    </div>
-
-
-                </div>
-
+                     </div>
+                  </div>
+               </div>
             </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!------------------        section3        ------------------>
-
-<section class="section small-projects-section" id="section3">
-    <div class="container">
-        <div class="tile is-ancestor">
-            <div class="tile is-vertical is-12">
-                <div class="tile">
-
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification project-card">
-                            <p class="title has-text-centered" data-translate="textEditorTitle">Text Editor</p>
-                            <figure class="image is-3by2">
-                                <img class="modal-trigger non-clickable" data-target="project-modal"
-                                     src="img/text-editor.png" alt="" style="border-radius: 10px;">
-                            </figure>
-                            <div class="content">
-                                <div class="tags">
-                                    <br>
-                                    <p data-translate="textEditorDescription">
-                                        Text editor including open/save, print, cut/copy/paste, undo/redo operations,
-                                        and font customization options such as styles and sizes.
-                                    </p>
-                                    <span class="tag">java swing</span>
-                                </div>
-                                <div class="has-text-centered">
-                                    <a href="https://github.com/ArminRmt/-TextEditor" target="_blank"
-                                       class="button is-primary" data-translate="textEditorButton">View Project</a>
-                                </div>
-                            </div>
+         </div>
+      </section>
+      <!------------------        section3        ------------------>
+      <section class="section" id="section2">
+         <div class="container">
+            <div class="tile is-ancestor">
+               <div class="tile is-vertical is-12">
+                  <div class="tile">
+                     <div class="tile is-parent">
+                        <article class="tile is-child notification"
+                           style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                           <p class="title has-text-centered" data-translate="compilerTitle">Compiler</p>
+                           <figure class="image is-3by2">
+                              <img class="modal-trigger non-clickable" data-target="project-modal" src="img/comp.png"
+                                 alt="Project Image" style="border-radius: 10px;">
+                           </figure>
+                           <div class="content" style="padding-top: 20px;">
+                              <p data-translate="compilerDescription">
+                                 Python-based compiler that can generate intermediate code from input files,
+                                 perform semantic analysis, and optimize code through register allocation.
+                              </p>
+                              <div class="has-text-centered" style="padding-top: 20px;">
+                                 <a href="https://github.com/ArminRmt/teslang-compiler" target="_blank"
+                                    class="button is-primary" data-translate="compilerButton">View Project</a>
+                              </div>
+                           </div>
                         </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!------------------        Education        ------------------>
-
-<section class="section" id="EducationSection">
-    <div class="container">
-        <h1 class="title" style="text-align: center;" data-translate="educationTitle">Education</h1>
-        <hr/>
-
-        <div class="card card-gap">
-            <div class="card-content">
-                <div class="content">
-                    <p class="title is-4" data-translate="universityName2">amirkabir university of technology</p>
-                    <p class="subtitle is-6">
+                     </div>
+                     
+                     <div class="tile is-ancestor">
+                        <div class="tile is-vertical is-12">
+                           <div class="tile">
+                              <div class="tile is-parent">
+                                 <article class="tile is-child notification"
+                                    style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                                    <p class="title has-text-centered" data-translate="compilerTitle">Text Editor</p>
+                                    <figure class="image is-3by2">
+                                       <img class="modal-trigger non-clickable" data-target="project-modal" src="img/text-editor.png"
+                                          alt="Project Image" style="border-radius: 10px;">
+                                    </figure>
+                                    <div class="content" style="padding-top: 20px;">
+                                       <p data-translate="compilerDescription">
+                                          Text editor including open/save, print, cut/copy/paste, undo/redo operations,
+                                          and font customization options such as styles and sizes.
+                                       </p>
+                                       <div class="has-text-centered" style="padding-top: 20px;">
+                                          <a href="https://github.com/ArminRmt/-TextEditor" target="_blank"
+                                             class="button is-primary" data-translate="compilerButton">View Project</a>
+                                       </div>
+                                    </div>
+                                 </article>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+      </section>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      <!------------------        Education        ------------------>
+      <section class="section" id="EducationSection">
+         <div class="container">
+            <h1 class="title" style="text-align: center;" data-translate="educationTitle">Education</h1>
+            <hr/>
+            <div class="card card-gap">
+               <div class="card-content">
+                  <div class="content">
+                     <p class="title is-4" data-translate="universityName2">Amirkabir university of technology</p>
+                     <p class="subtitle is-6">
                         <strong data-translate="degree2">Masters degree (cyber security)</strong>
                         <br>
                         <time datetime="2017-09" data-translate="date2Start">September 2024</time>
-                    </p>
-                </div>
+                     </p>
+                  </div>
+               </div>
             </div>
-        </div>
-
-
-        <div class="card">
-            <div class="card-content">
-                <div class="content">
-                    <p class="title is-4" data-translate="universityName1">Babol Noshirvani University of Technology</p>
-                    <p class="subtitle is-6">
+            <br>
+            <div class="card">
+               <div class="card-content">
+                  <div class="content">
+                     <p class="title is-4" data-translate="universityName1">Babol Noshirvani University of Technology</p>
+                     <p class="subtitle is-6">
                         <strong data-translate="degree1">Bachelor's degree, Computer Software Engineering</strong>
                         <br>
                         <time datetime="2020-09" data-translate="date1Start">September 2020</time>
                         -
                         <time datetime="2024-09" data-translate="date1End">September 2024</time>
-                    </p>
-                </div>
-                <div class="content">
-                    <span data-translate="major1">Major: Computer Engineering, Computer Science Track</span> <br>
-                    <span data-translate="gpa1">GPA: 3/4</span>
-                </div>
+                     </p>
+                  </div>
+                  <div class="content">
+                     <span data-translate="major1">Major: Computer Engineering, Computer Science Track</span> <br>
+                  </div>
+               </div>
             </div>
-        </div>
-
-
-    </div>
-</section>
-
-
-<!------------------        Contact        ------------------>
-
-<section class="section" id="ContactSection">
-    <div class="container">
-        <h1 class="title" style="text-align: center;" data-translate="contactTitle">Contact</h1>
-        <hr/>
-        <nav class="level">
-            <div class="level-item has-text-centered">
-                <div>
-                    <a href="https://github.com/ArminRmt" class="icon is-large">
-                        <i class="fab fa-2x fa-github"></i>
-                    </a>
-                    <p class="heading">
+         </div>
+      </section>
+      <!------------------        Contact        ------------------>
+      <section class="section" id="ContactSection">
+         <div class="container">
+            <h1 class="title" style="text-align: center;" data-translate="contactTitle">Contact</h1>
+            <hr/>
+            <nav class="level">
+               <div class="level-item has-text-centered">
+                  <div>
+                     <a href="https://github.com/ArminRmt" class="icon is-large">
+                     <i class="fab fa-2x fa-github"></i>
+                     </a>
+                     <p class="heading">
                         <a href="https://github.com/ArminRmt" data-translate="github">Github</a>
-                    </p>
-                </div>
-            </div>
-            <div class="level-item has-text-centered">
-                <div>
-                    <a href="https://t.me/Armin_rahmati16" class="icon is-large">
-                        <i class="fab fa-telegram fa-2x"></i>
-                    </a>
-                    <p class="heading">
+                     </p>
+                  </div>
+               </div>
+               <div class="level-item has-text-centered">
+                  <div>
+                     <a href="https://t.me/Armin_rahmati16" class="icon is-large">
+                     <i class="fab fa-telegram fa-2x"></i>
+                     </a>
+                     <p class="heading">
                         <a href="https://t.me/Armin_rahmati16" data-translate="telegram">Telegram</a>
-                    </p>
-                </div>
-            </div>
-            <div class="level-item has-text-centered">
-                <div>
-                    <a href="mailto:arminrahmati83@gmail.com" class="icon is-large">
-                        <i class="fas fa-2x fa-envelope"></i>
-                    </a>
-                    <p class="heading">
+                     </p>
+                  </div>
+               </div>
+               <div class="level-item has-text-centered">
+                  <div>
+                     <a href="mailto:arminrahmati83@gmail.com" class="icon is-large">
+                     <i class="fas fa-2x fa-envelope"></i>
+                     </a>
+                     <p class="heading">
                         <a href="mailto:arminrahmati83@gmail.com" data-translate="gmail">Gmail</a>
-                    </p>
-                </div>
-            </div>
-            <div class="level-item has-text-centered">
-                <div>
-                    <a href="https://www.linkedin.com/in/armin-rmt/" class="icon is-large">
-                        <i class="fab fa-2x fa-linkedin-in"></i>
-                    </a>
-                    <p class="heading">
+                     </p>
+                  </div>
+               </div>
+               <div class="level-item has-text-centered">
+                  <div>
+                     <a href="https://www.linkedin.com/in/armin-rmt/" class="icon is-large">
+                     <i class="fab fa-2x fa-linkedin-in"></i>
+                     </a>
+                     <p class="heading">
                         <a href="https://www.linkedin.com/in/armin-rmt/" data-translate="linkedin">linkedin</a>
-                    </p>
-                </div>
-            </div>
-        </nav>
-    </div>
-</section>
-
-<!------------------        footer        ------------------>
-
-<footer class="footer" id="FooterSection">
-    <div class="content has-text-centered">
-        <a href="https://opensource.org/licenses/MIT" target="_blank" data-translate="footerText">MIT License</a>
-    </div>
-</footer>
-
-
-<script src="js/bundle.js"></script>
-</body>
+                     </p>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </section>
+      <!------------------        footer        ------------------>
+      <footer class="footer" id="FooterSection">
+         <div class="content has-text-centered">
+            <a href="https://opensource.org/licenses/MIT" target="_blank" data-translate="footerText">MIT License</a>
+         </div>
+      </footer>
+      <script src="js/bundle.js"></script>
+   </body>
 </html>
