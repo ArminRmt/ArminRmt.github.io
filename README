@@ -64,8 +64,7 @@ To deploy this portfolio to GitHub Pages, follow these steps:
 
     bashCopy code
 
-    `npm install gh-pages --save-dev`
-
+    `npm install gh-pages --save-dev `
 4.  Update the scripts in `package.json`:
 
     jsonCopy code
