@@ -1,0 +1,97 @@
+# My Portfolio
+
+Welcome to my portfolio! This repository contains the source code for my portfolio website.
+
+
+## Running Locally
+
+To run this portfolio locally, follow these steps:
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/Techfolio.git`
+
+2.  Navigate to the project directory:
+
+    bashCopy code
+
+    `cd Techfolio`
+
+3.  Install dependencies:
+
+    bashCopy code
+
+    `npm install`
+
+4.  Build the project:
+
+    bashCopy code
+
+    `npm run build`
+
+5.  Start the development server:
+
+    bashCopy code
+
+    `npm start`
+
+6.  Openindex.html file
+
+
+
+Deploying to GitHub Pages
+-------------------------
+
+To deploy this portfolio to GitHub Pages, follow these steps:
+
+
+0. create repository with (your-username.github.io) name
+
+
+1.  Create a new branch named `gh-pages`:
+
+    bashCopy code
+
+    `git checkout -b gh-pages`
+
+2.  Set the homepage URL in `package.json` to your GitHub Pages URL:
+
+    jsonCopy code
+
+    `"homepage": "https://your-username.github.io"`
+
+3.  Install `gh-pages` package as a dev dependency:
+
+    bashCopy code
+
+    `npm install gh-pages --save-dev`
+
+4.  Update the scripts in `package.json`:
+
+    jsonCopy code
+
+    `"scripts": {
+      "build": "webpack --mode production",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d dist"
+    }`
+
+5.  Build the project:
+
+    bashCopy code
+
+    `npm run build`
+
+6.  Deploy to GitHub Pages:
+
+    bashCopy code
+
+    `npm run deploy`
+
+7.  Push changes to the `gh-pages` branch:
+
+    bashCopy code
+
+    `git push origin gh-pages`
+
+8.  Your portfolio should now be accessible at https://your-username.github.io.

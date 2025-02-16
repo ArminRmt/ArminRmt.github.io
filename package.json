@@ -3,16 +3,19 @@
   "version": "1.5.0",
   "description": "A simple, responsive, single-page portfolio and resume for developers built with Bulma, Sass, Font Awesome and Flickity.",
   "main": "webpack.config.js",
-  "repository": "https://github.com/mmacneil/devfolio",
-  "author": "Mark Macneil",
+  "homepage": "https://ArminRmt.github.io",
+  "author": "Armin RMT",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d docs"
   },
   "devDependencies": {
     "bulma": "^0.9.3",
     "css-loader": "^6.3.0",
     "css-minimizer-webpack-plugin": "^3.0.2",
+    "gh-pages": "^6.1.1",
     "mini-css-extract-plugin": "^2.3.0",
     "node-sass": "^7.0.0",
     "sass-loader": "^12.1.0",
