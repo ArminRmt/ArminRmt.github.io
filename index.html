@@ -5,6 +5,229 @@
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <link rel="icon" href="favicon.png" type="image/x-icon"/>
       <link rel="stylesheet" href="css/main.bundle.css"/>
+      <style>
+         @import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap");
+
+         :root {
+            --bg: #f6f7f2;
+            --surface: #fffdf6;
+            --surface-strong: #fff4dd;
+            --ink: #15202b;
+            --ink-soft: #41505f;
+            --line: #dfdccf;
+            --brand: #0f2a43;
+            --brand-2: #087e8b;
+            --shadow-soft: 0 8px 24px rgba(15, 42, 67, 0.08);
+            --shadow-lift: 0 14px 36px rgba(15, 42, 67, 0.16);
+         }
+
+         body {
+            color: var(--ink);
+            background:
+               radial-gradient(circle at 0% 0%, rgba(248, 216, 168, 0.35), transparent 40%),
+               radial-gradient(circle at 100% 20%, rgba(8, 126, 139, 0.14), transparent 45%),
+               linear-gradient(180deg, #f7f8f3, #eef2ea 40%, #f9f7ef 100%);
+         }
+
+         .title,
+         h1,
+         h2,
+         h3 {
+            font-family: "Source Serif 4", serif;
+            letter-spacing: 0.01em;
+         }
+
+         p,
+         li,
+         .subtitle {
+            color: var(--ink-soft);
+         }
+
+         .section-title {
+            text-align: center;
+            color: var(--brand);
+            font-size: clamp(1.7rem, 2.6vw, 2.25rem);
+            margin-bottom: 0.25rem;
+         }
+
+         hr {
+            background-color: var(--line);
+            height: 1px;
+         }
+
+         .navbar.is-primary {
+            background: transparent;
+         }
+
+         .site-navbar-menu {
+            background: linear-gradient(120deg, #153a53, #17586d);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 6px 24px rgba(13, 30, 50, 0.24);
+         }
+
+         .navbar .navbar-link,
+         .navbar .navbar-item {
+            color: #f4fcff;
+         }
+
+         .hero-surface {
+            background: linear-gradient(130deg, #3f6c8d 0%, #4d8791 40%, #8eb18a 100%);
+         }
+
+         #heroSection .title,
+         #heroSection .subtitle,
+         #heroSection .icon strong {
+            color: #fff;
+         }
+
+         .hero-avatar {
+            margin-bottom: 1.2rem;
+         }
+
+         .hero-avatar img {
+            border: 4px solid rgba(255, 255, 255, 0.75);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+         }
+
+         .hero-role {
+            margin-top: 0.35rem;
+            font-weight: 500;
+         }
+
+         .resume-icon {
+            margin-left: 0.3rem;
+         }
+
+         .detail-list {
+            margin-left: 1.2rem;
+            list-style-type: disc;
+         }
+
+         .detail-list li {
+            margin-bottom: 0.5rem;
+         }
+
+         .card {
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            box-shadow: var(--shadow-soft);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(255, 247, 233, 0.85));
+         }
+
+         .card .title.is-4 {
+            color: var(--brand);
+         }
+
+         .experience-logo {
+            object-fit: cover;
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            border: 1px solid rgba(21, 32, 43, 0.1);
+         }
+
+         .project-card {
+            background: linear-gradient(180deg, var(--surface), var(--surface-strong));
+            border-radius: 12px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--line);
+            padding: 20px;
+            transition: transform 220ms ease, box-shadow 220ms ease;
+         }
+
+         .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lift);
+         }
+
+         .project-image {
+            border-radius: 10px;
+            box-shadow: 0 6px 14px rgba(15, 42, 67, 0.15);
+         }
+
+         .project-image-contain {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+         }
+
+         .project-content {
+            padding-top: 1.1rem;
+         }
+
+         .project-tags {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+            margin-bottom: 1.1rem;
+         }
+
+         .project-tag {
+            background-color: #ffd39b;
+            color: #4d3004;
+            border-radius: 999px;
+            padding: 0.3rem 0.8rem;
+         }
+
+         .button.is-primary {
+            background: linear-gradient(135deg, #145674, #087e8b);
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            box-shadow: 0 6px 18px rgba(8, 126, 139, 0.3);
+            transition: transform 180ms ease, box-shadow 180ms ease;
+         }
+
+         .button.is-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 22px rgba(8, 126, 139, 0.35);
+         }
+
+         #ContactSection .icon {
+            color: var(--brand);
+         }
+
+         #ContactSection .heading a {
+            color: var(--ink-soft);
+            font-weight: 600;
+         }
+
+         .footer {
+            background: transparent;
+         }
+
+         .section .container {
+            animation: fadeInUp 420ms ease both;
+         }
+
+         @keyframes fadeInUp {
+            from {
+               opacity: 0;
+               transform: translateY(8px);
+            }
+            to {
+               opacity: 1;
+               transform: translateY(0);
+            }
+         }
+
+         @media (max-width: 768px) {
+            .project-card {
+               padding: 16px;
+            }
+
+            #ContactSection .level {
+               display: grid;
+               grid-template-columns: repeat(2, minmax(0, 1fr));
+               gap: 1rem;
+            }
+
+            #ContactSection .level-item {
+               justify-content: center;
+            }
+         }
+      </style>
       <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
       <script src="./js/languageSwitcher.js" defer></script>
    </head>
@@ -18,7 +241,7 @@
                </a>
             </div>
          </div>
-         <div class="navbar-menu" style="background-color: #5d0e41">
+         <div class="navbar-menu site-navbar-menu">
             <div class="navbar-end">
                <div class="navbar-item">
                   <a href="https://github.com/ArminRmt" class="icon is-large has-text-light">
@@ -44,12 +267,12 @@
       </nav>
       <!------------------        main baneer        ------------------>
       <section class="hero is-primary" id="heroSection">
-         <div class="hero-body" style="background-color: #9cafaa">
+         <div class="hero-body hero-surface">
             <!-- 9cafaa fec7b4 -->
             <div class="container">
                <div class="level">
                   <div class="level-item has-text-centered">
-                     <figure class="image is-128x128" style="margin-bottom: 30px">
+                     <figure class="image is-128x128 hero-avatar">
                         <img class="is-rounded" src="img/me.jpg"/>
                      </figure>
                   </div>
@@ -57,10 +280,10 @@
                <div class="columns has-text-centered">
                   <div class="column">
                      <h1 class="title is-1" data-translate="fullName">Armin Rahmati</h1>
-                     <h2 class="subtitle" data-translate="occupation" style="margin-top: 3px;">Backend Dev</h2>
+                     <h2 class="subtitle hero-role" data-translate="occupation">Software Engineer</h2>
                      <p>
                         <a href="resumeEN.pdf" class="icon has-text-light">
-                           <i class="fas fa-file-pdf" style="margin-left: 5px;"></i> <!-- Adjust margin as needed -->
+                           <i class="fas fa-file-pdf resume-icon"></i> <!-- Adjust margin as needed -->
                            <strong data-translate="resume">Resume</strong>
                         </a>
                      </p>
@@ -72,48 +295,41 @@
       <!------------------        About Me        ------------------>
       <section class="section" id="aboutMeSection">
          <div class="container">
-            <h1 class="title" style="text-align: center;" data-translate="aboutMeTitle">About Me</h1>
+            <h1 class="title section-title" data-translate="aboutMeTitle">About Me</h1>
             <hr/>
             <p data-translate="aboutMeIntro">
-               Motivated person with <strong>3</strong> years of experience in developing web applications and APIs.<br>
-               Diligent in solving complex problems, collaborating effectively within teams, and learning new technologies.<br>
-               Currently studying cybersecurity at <strong>Amirkabir</strong> University.<br><br>
+               Backend and automation engineer with <strong>3</strong> years of experience (1 year corporate, 2 years freelance) building APIs, real-time platforms, and workflow automations.<br>
+               Core stack: Node.js, Go, FastAPI, Redis, PostgreSQL/TimescaleDB, with strong focus on clean architecture, observability, and performance tuning.<br>
+               I also work with n8n orchestration and data analytics workflows, and I am currently pursuing an MSc in cybersecurity at <strong>Amirkabir</strong> University.<br><br>
                Beyond the world of coding, I maintain a harmonious lifestyle by listening to podcasts, engaging in regular
                fitness activities, and channeling my creativity through the guitar, culminating in a fulfilling and
                balanced life.
             </p>
             <br>
             <p data-translate="specializationTitle">My areas of specialization include:</p>
-            <ul style="margin-left: 20px; list-style-type: disc;">
-               <li data-translate="programmingLanguages">JavaScript: Async/Await, jQuery
+            <ul class="detail-list">
+               <li data-translate="programmingLanguages">Programming: JavaScript/TypeScript, Python, Go
                </li>
-               <li data-translate="frameworks">Frameworks: <strong>Node.js(Express)</strong>,
-                  <strong>Tailwind
-                  CSS</strong>,
-                  Vue.js
+               <li data-translate="frameworks">Frameworks and runtimes: <strong>Node.js (Express, Nest)</strong>, <strong>FastAPI</strong>, n8n
                </li>
                <li data-translate="additionalSkills">Additional Skills:
-                  <strong>Linux(File System, bash script)</strong>,
-                  <strong>DBM(SQL: PostgreSQL, MySQL; NoSQL: Redis)
-                  </strong>
-                  Unit/e2e Testing,
-                  Message queues (BullMQ),
-                  Web Scraping,
-                  Socket.io,
+                  <strong>Linux (server deployment, bash, access control)</strong>,
+                  <strong>Databases (PostgreSQL, MySQL, Redis, TimescaleDB)</strong>,
+                  BullMQ/Celery background jobs,
                   Docker,
-                  Git,
-                  <strong>REST APIs</strong>,
-                  JavaFx, PyQt
+                  Git/GitLab CI,
+                  Prometheus/ELK,
+                  <strong>REST APIs & WebSockets</strong>,
+                  Web Scraping (Puppeteer, Selenium)
                </li>
-               <li data-translate="familiarityWith">Familiarity with: machine learning, compiler design,
-                  <strong>modular microservice
-                  design</strong>, Search Engines(Elasticsearch),cryptography, blockchain
+               <li data-translate="familiarityWith">Familiarity with: BPMN 2.0, IoT sensor analytics, NLP, cryptography fundamentals,
+                  <strong>system design patterns</strong>, and workflow automation bots
                </li>
             </ul>
             <br>
             <p data-translate="personalInfoTitle">Personal Information:</p>
-            <ul style="margin-left: 20px; list-style-type: disc;">
-               <li data-translate="ageTitle">Age: <strong>22</strong></li>
+            <ul class="detail-list">
+               <li data-translate="ageTitle">Age: <strong>24</strong></li>
                <li data-translate="degree">Degree: Im in <strong>Masters degree</strong> in Computer cyber security at Amirkabir University.
                </li>
                <li data-translate="preferredWorkLocations">Preferred Work Locations:
@@ -133,8 +349,35 @@
       <!------------------        Experience        ------------------>
       <section class="section" id="ExperienceSection">
          <div class="container">
-            <h1 class="title" style="text-align: center;" data-translate="experienceTitle">Experience</h1>
+            <h1 class="title section-title" data-translate="experienceTitle">Experience</h1>
             <hr/>
+            <div class="card">
+               <div class="card-content">
+                  <div class="media">
+                     <div class="media-left">
+                        <figure class="image is-48x48">
+                           <img src="img/oticamp.jpeg"
+                              alt="OTICAMP Logo"
+                              class="experience-logo"/>
+                        </figure>
+                     </div>
+                     <div class="media-content">
+                        <p class="title is-4" data-translate="oticampTitle">OTICAMP - Head of Backend Developer (FastAPI)</p>
+                        <p class="subtitle is-6" data-translate="oticampDateRange">Jan 2026 - Present</p>
+                     </div>
+                  </div>
+                  <div class="content" data-translate="oticampDescription">
+                     <ul>
+                        <li>Architected a modular monolith for a radio network monitoring system (RNMS).</li>
+                        <li>Built a high-performance real-time layer with FastAPI WebSockets and Redis Pub/Sub for concurrent dashboard broadcasting.</li>
+                        <li>Optimized time-series analytics with TimescaleDB for faster historical signal-quality queries.</li>
+                        <li>Standardized API docs with Scalar OpenAPI to improve frontend integration speed.</li>
+                        <li>Established CI/CD workflows and code-review standards based on SOLID and clean code practices.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <br>
             <div class="card">
                <div class="card-content">
                   <div class="media">
@@ -146,26 +389,17 @@
                      </div>
                      <div class="media-content">
                         <p class="title is-4" data-translate="teachingAssistantTitle">Tasu Ventures</p>
-                        <p class="subtitle is-6" data-translate="dateRange2">Apr 2024 - oct 2024</p>
+                        <p class="subtitle is-6" data-translate="dateRange2">Apr 2024 - Oct 2024</p>
                      </div>
                   </div>
                   <div class="content" data-translate="teachingAssistantDescription">
                      <ul>
-                        <li>Developed a web scraper and chatbot.
-                        </li>
-                        <li>
-                           Integrated Facebook/Instagram APIs for social media by applying clean code practices and design pattern
-                        </li>
-                        <li>Managed asynchronous tasks using BullMQ, transactions, and promises.
-                        </li>
-                        <li>
-                           Participated in code reviews to maintain high code quality.
-                        </li>
-                        <li>Implemented unit/E2E tests and Prometheus logging for all modules.
-                        </li>
-                        <li>
-                           Role: backend developer
-                        </li>
+                        <li>Developed web scrapers with request-rate tuning to bypass client rate limits and keep data collection reliable.</li>
+                        <li>Built an LLM-powered chatbot with RAG by indexing scraped data in PostgreSQL and enforcing business rules in prompts.</li>
+                        <li>Managed daily async workflows with BullMQ and Redis queues to maintain high reliability.</li>
+                        <li>Integrated Instagram and Facebook APIs using webhooks and challenge-response verification.</li>
+                        <li>Implemented RBAC middleware for four roles and improved observability with structured Prometheus logging.</li>
+                        <li>Participated in code reviews and maintained full unit/E2E coverage for core modules.</li>
                      </ul>
                   </div>
                </div>
@@ -187,13 +421,10 @@
                   </div>
                   <div class="content" data-translate="internshipDescription">
                      <ul>
-                        <li>
-                           Contributed as a backend programmer within a team for a startup project, focusing on Node.js
-                           and Docker
-                        </li>
-                        <li>Developed a buyer's request management system and implemented geolocation features for
-                           locating the nearest car spare parts
-                        </li>
+                        <li>Contributed as a backend developer for a startup project using Node.js, PostgreSQL, and Docker.</li>
+                        <li>Built a geospatial buyer-request system for finding nearby spare-part stores with PostGIS and Haversine-based distance queries.</li>
+                        <li>Integrated Neshan API for routing and map-based location workflows.</li>
+                        <li>Improved notification efficiency using Redis Pub/Sub with batching and TTL cleanup.</li>
                      </ul>
                      <div class="tags">
                         <span class="tag">Typescript
@@ -215,27 +446,26 @@
       <!------------------        section1        ------------------>
       <section class="section" id="section1">
          <div class="container">
-            <h1 class="title" style="text-align: center;" data-translate="projectsTitle">Projects</h1>
+            <h1 class="title section-title" data-translate="projectsTitle">Projects</h1>
             <hr/>
             <div class="tile is-ancestor">
                <div class="tile is-vertical is-12">
                   <div class="tile">
                      <div class="tile is-parent">
-                        <article class="tile is-child notification"
-                           style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                        <article class="tile is-child notification project-card">
                            <p class="title has-text-centered" data-translate="storeLocatorTitle">Store Locator</p>
                            <figure class="image is-3by2">
                               <img class="modal-trigger non-clickable" data-target="project-modal"
-                                 src="img/storelocator.png" alt="Project Image" style="border-radius: 10px;">
+                                 src="img/storelocator.png" alt="Project Image" class="project-image">
                            </figure>
-                           <div class="content" style="padding-top: 20px;">
+                           <div class="content project-content">
                               <p data-translate="storeLocatorDescription">
                                  The system enables parts buyers to submit requests for specific parts to spare parts
                                  stores. Sellers respond based on their inventory. Buyers can track responses and
                                  view seller locations on a map. The system also displays the shortest route from the
                                  buyer's location to the store.
                               </p>
-                              <div class="has-text-centered" style="padding-top: 20px;">
+                              <div class="has-text-centered project-content">
                                  <a href="https://github.com/ArminRmt/Store-Locator" target="_blank"
                                     class="button is-primary" data-translate="storeLocatorButton">Github</a>
                               </div>
@@ -245,18 +475,17 @@
 
                      
                      <div class="tile is-parent">
-                        <article class="tile is-child notification"
-                           style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                        <article class="tile is-child notification project-card">
                            <p class="title has-text-centered" data-translate="paletteTitle">palette</p>
                            <figure class="image is-3by2">
                               <img class="modal-trigger non-clickable" data-target="project-modal" src="img/palette.png"
-                                 alt="Project Image" style="border-radius: 10px;">
+                                 alt="Project Image" class="project-image">
                            </figure>
-                           <div class="content" style="padding-top: 20px;">
+                           <div class="content project-content">
                               <p data-translate="paletteDescription">
                                  AI-driven platform for online business management and social media engagement. It unifies inventory data from multiple sources for real-time insights, boosting efficiency, lowering support costs, and enhancing customer satisfaction.
                               </p>
-                              <div class="has-text-centered" style="padding-top: 20px;">
+                              <div class="has-text-centered project-content">
                                  <a href="https://palette-tech.io/" target="_blank"
                                     class="button is-primary" data-translate="compilerButton">Visit</a>
                               </div>
@@ -275,30 +504,23 @@
                <div class="tile is-vertical is-12">
                   <div class="tile">
                      <div class="tile is-parent">
-                        <article class="tile is-child notification"
-                           style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                        <article class="tile is-child notification project-card">
                            <p class="title has-text-centered" data-translate="laravelBlogTitle">Laravel Blog</p>
                            <figure class="image is-3by2">
                               <img class="modal-trigger non-clickable" data-target="project-modal"
-                                 src="img/laravelBlog.png" alt="" style="border-radius: 10px;">
+                                 src="img/laravelBlog.png" alt="" class="project-image">
                            </figure>
-                           <div class="content" style="padding-top: 20px;">
-                              <div class="tags" style="display: flex; justify-content: center; margin-bottom: 20px;">
-                                 <span class="tag"
-                                    style="background-color: #FDAF7B; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Laravel</span>
-                                 <span class="tag"
-                                    style="background-color: #FDAF7B; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Tailwind</span>
-                                 <span class="tag"
-                                    style="background-color: #FDAF7B; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Livewire</span>
-                                 <span class="tag"
-                                    style="background-color: #FDAF7B; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Jetstream</span>
-                                 <span class="tag"
-                                    style="background-color: #FDAF7B; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Scout</span>
+                           <div class="content project-content">
+                              <div class="tags project-tags">
+                                 <span class="tag project-tag">Laravel</span>
+                                 <span class="tag project-tag">Tailwind</span>
+                                 <span class="tag project-tag">Livewire</span>
+                                 <span class="tag project-tag">Jetstream</span>
+                                 <span class="tag project-tag">Scout</span>
                               </div>
                               <div class="has-text-centered">
                                  <a href="https://github.com/ArminRmt/LaravelBLog" target="_blank"
-                                    class="button is-primary"
-                                    style="padding: 10px 20px; color: #fff; border: none; border-radius: 5px; text-decoration: none;"
+                                    class="button is-primary project-link"
                                     data-translate="laravelBlogButton">View
                                  Project</a>
                               </div>
@@ -306,20 +528,19 @@
                         </article>
                      </div>
                      <div class="tile is-parent">
-                        <article class="tile is-child notification"
-                           style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                        <article class="tile is-child notification project-card">
                            <p class="title has-text-centered" data-translate="ecommerceTitle">Ecommerce</p>
                            <figure class="image is-3by2">
                               <img class="modal-trigger non-clickable" data-target="project-modal" src="img/shop.png"
-                                 alt="Project Image" style="border-radius: 10px;">
+                                 alt="Project Image" class="project-image">
                            </figure>
-                           <div class="content" style="padding-top: 20px;">
+                           <div class="content project-content">
                               <p data-translate="ecommerceDescription">
                                  Multilingual and dynamic, order tracking, inventory management, role and access
                                  level management, product return and discount sections, rating and review, payment
                                  gateway, wishlist functionality, shopping cart, user and admin panel.
                               </p>
-                              <div class="has-text-centered" style="padding-top: 20px;">
+                              <div class="has-text-centered project-content">
                                  <a href="https://github.com/ArminRmt/Laravel-ecommerce" target="_blank"
                                     class="button is-primary" data-translate="ecommerceButton">View Project</a>
                               </div>
@@ -327,27 +548,24 @@
                         </article>
                      </div>
                      <div class="tile is-parent">
-                        <article class="tile is-child notification"
-                           style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                        <article class="tile is-child notification project-card">
                            <p class="title has-text-centered" data-translate="gitBranchTitle">Git branch</p>
                            <figure class="image is-3by2">
                               <img class="modal-trigger non-clickable" data-target="project-modal" src="img/git.png"
                                  alt=""
-                                 style="border-radius: 10px; max-height: 100%; max-width: 100%; object-fit: contain;">
+                                 class="project-image project-image-contain">
                            </figure>
-                           <div class="content" style="padding-top: 20px;">
-                              <div class="tags" style="display: flex; justify-content: center; margin-bottom: 20px;">
+                           <div class="content project-content">
+                              <div class="tags project-tags">
                                  <p data-translate="gitBranchDescription">
                                     Implementing Git branching concepts graphically, offering hands-on experience in
                                     managing version control within a simulated environment.
                                  </p>
-                                 <span class="tag"
-                                    style="background-color: #FDAF7B; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">JavaFx</span>
+                                 <span class="tag project-tag">JavaFx</span>
                               </div>
                               <div class="has-text-centered">
                                  <a href="https://github.com/ArminRmt/learn-git-branching/tree/master"
-                                    target="_blank" class="button is-primary"
-                                    style="padding: 10px 20px; color: #fff; border: none; border-radius: 5px; text-decoration: none;"
+                                    target="_blank" class="button is-primary project-link"
                                     data-translate="gitBranchButton">View
                                  Project</a>
                               </div>
@@ -360,25 +578,24 @@
          </div>
       </section>
       <!------------------        section3        ------------------>
-      <section class="section" id="section2">
+      <section class="section" id="section3">
          <div class="container">
             <div class="tile is-ancestor">
                <div class="tile is-vertical is-12">
                   <div class="tile">
                      <div class="tile is-parent">
-                        <article class="tile is-child notification"
-                           style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                        <article class="tile is-child notification project-card">
                            <p class="title has-text-centered" data-translate="compilerTitle">Compiler</p>
                            <figure class="image is-3by2">
                               <img class="modal-trigger non-clickable" data-target="project-modal" src="img/comp.png"
-                                 alt="Project Image" style="border-radius: 10px;">
+                                 alt="Project Image" class="project-image">
                            </figure>
-                           <div class="content" style="padding-top: 20px;">
+                           <div class="content project-content">
                               <p data-translate="compilerDescription">
                                  Python-based compiler that can generate intermediate code from input files,
                                  perform semantic analysis, and optimize code through register allocation.
                               </p>
-                              <div class="has-text-centered" style="padding-top: 20px;">
+                              <div class="has-text-centered project-content">
                                  <a href="https://github.com/ArminRmt/teslang-compiler" target="_blank"
                                     class="button is-primary" data-translate="compilerButton">View Project</a>
                               </div>
@@ -390,19 +607,18 @@
                         <div class="tile is-vertical is-12">
                            <div class="tile">
                               <div class="tile is-parent">
-                                 <article class="tile is-child notification"
-                                    style="background-color: #F7EEDD; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                                 <article class="tile is-child notification project-card">
                                     <p class="title has-text-centered" data-translate="compilerTitle">Text Editor</p>
                                     <figure class="image is-3by2">
                                        <img class="modal-trigger non-clickable" data-target="project-modal" src="img/text-editor.png"
-                                          alt="Project Image" style="border-radius: 10px;">
+                                          alt="Project Image" class="project-image">
                                     </figure>
-                                    <div class="content" style="padding-top: 20px;">
+                                    <div class="content project-content">
                                        <p data-translate="compilerDescription">
                                           Text editor including open/save, print, cut/copy/paste, undo/redo operations,
                                           and font customization options such as styles and sizes.
                                        </p>
-                                       <div class="has-text-centered" style="padding-top: 20px;">
+                                       <div class="has-text-centered project-content">
                                           <a href="https://github.com/ArminRmt/-TextEditor" target="_blank"
                                              class="button is-primary" data-translate="compilerButton">View Project</a>
                                        </div>
@@ -422,7 +638,7 @@
       <!------------------        Education        ------------------>
       <section class="section" id="EducationSection">
          <div class="container">
-            <h1 class="title" style="text-align: center;" data-translate="educationTitle">Education</h1>
+            <h1 class="title section-title" data-translate="educationTitle">Education</h1>
             <hr/>
             <div class="card card-gap">
                <div class="card-content">
@@ -459,7 +675,7 @@
       <!------------------        Contact        ------------------>
       <section class="section" id="ContactSection">
          <div class="container">
-            <h1 class="title" style="text-align: center;" data-translate="contactTitle">Contact</h1>
+            <h1 class="title section-title" data-translate="contactTitle">Contact</h1>
             <hr/>
             <nav class="level">
                <div class="level-item has-text-centered">
@@ -474,11 +690,11 @@
                </div>
                <div class="level-item has-text-centered">
                   <div>
-                     <a href="https://t.me/Armin_rahmati16" class="icon is-large">
+                     <a href="https://t.me/KindCoderSoul" class="icon is-large">
                      <i class="fab fa-telegram fa-2x"></i>
                      </a>
                      <p class="heading">
-                        <a href="https://t.me/Armin_rahmati16" data-translate="telegram">Telegram</a>
+                        <a href="https://t.me/KindCoderSoul" data-translate="telegram">Telegram</a>
                      </p>
                   </div>
                </div>

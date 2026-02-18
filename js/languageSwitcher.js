@@ -2,25 +2,21 @@ const texts = {
     'en': {
         'heroSection': 'Hero Section',
         'fullName': 'Armin Rahmati',
-        'occupation': 'Backend Dev',
+        'occupation': 'Software Engineer',
         'resume': 'Resume',
 
         'aboutMeTitle': 'About Me',
-        'aboutMeIntro': 'Motivated person with <strong>2</strong> years of experience in developing web applications and APIs.<br>\n' +
-            '            Diligent in solving complex problems, collaborating effectively within teams, and learning new technologies.<br>\n' +
-            '            Currently, studying system design and architecture, focusing on developing scalable, high-performing, and\n' +
-            '            clean code optimized\n' +
-            '            for data storage solutions.<br><br>' +
-            '\n' +
-            '\n' +
+        'aboutMeIntro': 'Backend and automation engineer with <strong>3</strong> years of experience (1 year corporate, 2 years freelance) building APIs, real-time platforms, and workflow automations.<br>\n' +
+            '            Core stack: Node.js, Go, FastAPI, Redis, PostgreSQL/TimescaleDB, with strong focus on clean architecture, observability, and performance tuning.<br>\n' +
+            '            I also work with n8n orchestration and data analytics workflows, and I am currently pursuing an MSc in cybersecurity at <strong>Amirkabir</strong> University.<br><br>' +
             '            Beyond the world of coding, I maintain a harmonious lifestyle by listening to podcasts, engaging in regular\n' +
             '            fitness activities, and channeling my creativity through the guitar, culminating in a fulfilling and\n' +
             '            balanced life.',
         'specializationTitle': 'My areas of specialization include:',
-        'programmingLanguages': 'JavaScript: Async/Await, jQuery',
-        'frameworks': 'Frameworks: Prior Stack: Laravel, Current Stack: <strong>Node.js(Express,ES6,PM2)</strong>, Tailwind CSS, Vue.js',
-        'additionalSkills': 'Additional Skills: Linux(File System, bash script), <strong>SQL(PostgreSQL,MySQL)</strong> & NoSQL databases, Unit Testing, Caching, REST APIs, JavaFx, PyQt',
-        'familiarityWith': 'Familiarity with: machine learning, compiler design, Hardware language, modular microservice design, Search Engines(Elasticsearch)',
+        'programmingLanguages': 'Programming: JavaScript/TypeScript, Python, Go',
+        'frameworks': 'Frameworks and runtimes: <strong>Node.js (Express, Nest)</strong>, <strong>FastAPI</strong>, n8n',
+        'additionalSkills': 'Additional Skills: <strong>Linux (server deployment, bash, access control)</strong>, <strong>Databases (PostgreSQL, MySQL, Redis, TimescaleDB)</strong>, BullMQ/Celery background jobs, Docker, Git/GitLab CI, Prometheus/ELK, <strong>REST APIs & WebSockets</strong>, Web Scraping (Puppeteer, Selenium)',
+        'familiarityWith': 'Familiarity with: BPMN 2.0, IoT sensor analytics, NLP, cryptography fundamentals, <strong>system design patterns</strong>, and workflow automation bots',
         'personalInfoTitle': 'Personal Information:',
         'ageTitle': 'Age: 22',
         'degree': 'Degree: Bachelor of Science in Computer Software Engineering',
@@ -31,14 +27,33 @@ const texts = {
         // 'maritalStatus': 'Marital Status: Single',
 
         'experienceTitle': 'Experience',
-        'internshipTitle': 'Internship - Babol Noshirvani University of Technology',
-        'teachingAssistantTitle': 'Teaching Assistant - Babol Noshirvani University of Technology',
-        'dateRange1': 'Jan 2023 - Mar 2023',
-        'dateRange2': 'Apr 2022 - Jan 2022',
-        'internshipDescription': 'Contributed as a backend programmer within a team for a startup project, focusing on Node.js and Docker Developed a buyer\'s request management system and implemented geolocation features for locating the nearest car spare parts',
-        'internshipTags': ['Node.js', 'Docker', 'Socket.io', 'Geolocation', 'REST API', 'React.js'],
-        'teachingAssistantDescription': 'Instructed students on fundamental networking concepts, protocols, and technologies, including TCP/IP, DNS, DHCP, VLANs, and routing protocols Provided practical guidance on network simulation tools such as Cisco Packet Tracer and Wireshark',
-        'teachingAssistantTags': ['IP Addressing', 'Routing', 'Firewalls', 'Network Security', 'Network Protocols (TCP/IP, UDP, ICMP, etc.)'],
+        'oticampTitle': 'OTICAMP - Head of Backend Developer (FastAPI)',
+        'oticampDateRange': 'Jan 2026 - Present',
+        'oticampDescription': '<ul>' +
+            '<li>Architected a modular monolith for a radio network monitoring system (RNMS).</li>' +
+            '<li>Built a high-performance real-time layer with FastAPI WebSockets and Redis Pub/Sub for concurrent dashboard broadcasting.</li>' +
+            '<li>Optimized time-series analytics with TimescaleDB for faster historical signal-quality queries.</li>' +
+            '<li>Standardized API docs with Scalar OpenAPI to improve frontend integration speed.</li>' +
+            '<li>Established CI/CD workflows and code-review standards based on SOLID and clean code practices.</li>' +
+            '</ul>',
+        'teachingAssistantTitle': 'Tasu Ventures',
+        'dateRange2': 'Apr 2024 - Oct 2024',
+        'teachingAssistantDescription': '<ul>' +
+            '<li>Developed web scrapers with request-rate tuning to bypass client rate limits and keep data collection reliable.</li>' +
+            '<li>Built an LLM-powered chatbot with RAG by indexing scraped data in PostgreSQL and enforcing business rules in prompts.</li>' +
+            '<li>Managed daily async workflows with BullMQ and Redis queues to maintain high reliability.</li>' +
+            '<li>Integrated Instagram and Facebook APIs using webhooks and challenge-response verification.</li>' +
+            '<li>Implemented RBAC middleware for four roles and improved observability with structured Prometheus logging.</li>' +
+            '<li>Participated in code reviews and maintained full unit/E2E coverage for core modules.</li>' +
+            '</ul>',
+        'internshipTitle': 'Internship - Technology Development Center of Amirkabir University',
+        'dateRange1': 'Jan 2023 - Apr 2023',
+        'internshipDescription': '<ul>' +
+            '<li>Contributed as a backend developer for a startup project using Node.js, PostgreSQL, and Docker.</li>' +
+            '<li>Built a geospatial buyer-request system for finding nearby spare-part stores with PostGIS and Haversine-based distance queries.</li>' +
+            '<li>Integrated Neshan API for routing and map-based location workflows.</li>' +
+            '<li>Improved notification efficiency using Redis Pub/Sub with batching and TTL cleanup.</li>' +
+            '</ul>',
 
         'projectsTitle': 'Projects',
         'storeLocatorTitle': 'Store Locator',
@@ -91,20 +106,19 @@ const texts = {
     'fa': {
         'heroSection': 'بخش شاهرگ',
         'fullName': 'آرمین رحمتی',
-        'occupation': 'توسعه دهنده Backend',
+        'occupation': 'مهندس نرم افزار',
         'resume': 'رزومه',
 
         'aboutMeTitle': 'درباره من',
-        'aboutMeIntro': 'فردی با انگیزه با 2 سال سابقه در توسعه برنامه های کاربردی وب و API\n' +
-            'کوشا در حل مشکلات پیچیده، همکاری موثر در تیم ها و یادگیری تکنولوژی های جدید\n' +
-            'در حال حاضر، در حال مطالعه طراحی و معماری سیستم، با تمرکز بر توسعه کد مقیاس پذیر، با کارایی بالا و تمیز بهینه شده برای راه حل های ذخیره سازی داده ها' +
-            '\n<br><br>' +
-            'فراتر از دنیای کدنویسی، من با گوش دادن به پادکست ها، درگیر شدن در فعالیت های تناسب اندام منظم و هدایت خلاقیتم از طریق گیتار، سبک زندگی هماهنگی را حفظ میکنم که به یک زندگی کامل و متعادل ختم میشود.',
+        'aboutMeIntro': 'مهندس بک‌اند و اتوماسیون با <strong>3</strong> سال تجربه (1 سال سازمانی، 2 سال فریلنس) در توسعه API، پلتفرم‌های بلادرنگ و گردش‌کارهای اتوماسیون.<br>\n' +
+            'استک اصلی من Node.js، Go، FastAPI، Redis و PostgreSQL/TimescaleDB است و روی معماری تمیز، مشاهده‌پذیری و بهینه‌سازی عملکرد تمرکز دارم.<br>\n' +
+            'همچنین روی n8n و گردش‌کارهای تحلیل داده کار می‌کنم و در حال حاضر دانشجوی کارشناسی ارشد امنیت سایبری در <strong>دانشگاه امیرکبیر</strong> هستم.<br><br>' +
+            'فراتر از دنیای کدنویسی، با گوش دادن به پادکست‌ها، فعالیت ورزشی منظم و نواختن گیتار، سبک زندگی متعادلی را حفظ می‌کنم.',
         'specializationTitle': 'زمینه های تخصصی من عبارتند از:',
-        'programmingLanguages': 'جاواسکریپت: Async/Await, jQuery',
-        'frameworks': 'فریم ورک ها: Prior Stack: Laravel, Current Stack: <strong>Node.js(Express,ES6,PM2)</strong>, Tailwind CSS, Vue.js ',
-        'additionalSkills': 'مهارت‌های اضافی: Linux(File System, bash script), <strong>SQL(PostgreSQL,MySQL)</strong> & NoSQL databases, Unit Testing, Caching, REST APIs, JavaFx, PyQt',
-        'familiarityWith': 'آشنایی با: machine learning, compiler design, Hardware language, modular microservice design, Search Engines(Elasticsearch)',
+        'programmingLanguages': 'زبان‌ها: JavaScript/TypeScript، Python، Go',
+        'frameworks': 'فریم‌ورک‌ها و محیط اجرا: <strong>Node.js (Express, Nest)</strong>، <strong>FastAPI</strong>، n8n',
+        'additionalSkills': 'مهارت‌های تکمیلی: <strong>Linux (استقرار سرور، bash، کنترل دسترسی)</strong>، <strong>پایگاه‌داده‌ها (PostgreSQL، MySQL، Redis، TimescaleDB)</strong>، صف‌های BullMQ/Celery، Docker، Git/GitLab CI، Prometheus/ELK، <strong>REST APIs و WebSockets</strong>، وب‌اسکرپینگ (Puppeteer، Selenium)',
+        'familiarityWith': 'آشنایی با: BPMN 2.0، تحلیل داده حسگرهای IoT، NLP، مبانی رمزنگاری، <strong>الگوهای طراحی سیستم</strong> و اتوماسیون بات‌ها',
         'personalInfoTitle': 'اطلاعات شخصی:',
         'ageTitle': 'سن: 22',
         'degree': 'مدرک تحصیلی: کارشناسی ارشد مهندسی کامپیوتر امنیت سایبری',
@@ -114,15 +128,34 @@ const texts = {
         'militaryServiceStatus': 'وضعیت سربازی: مشمول',
         // 'maritalStatus': 'وضعیت تاهل: مجرد',
 
-        'experienceTitle': 'تجربه ها',
-        'internshipTitle': 'برنامه نویس بک اند - دانشگاه صنعتی امیرکبیر تهران',
-        'teachingAssistantTitle': 'برنامه نویس بک اند',
-        'dateRange1': 'فروردین 1402 - اردیبهشت 1402',
-        'dateRange2': 'فروردین 1401 - دی 1400',
-        'internshipDescription': 'کاراموزی سیستم مدیریت درخواست خریدار با موقعیت جغرافیایی برای مکان یابی قطعات یدکی خودرو در نزدیکی، و پیاده سازی یک سیستم اطلاع رسانی و صف پیام با حافظه کارآمد با استفاده از مدل publish-subscribe. توسعه دهنده backend (node ​​js)',
-        'internshipTags': ['Node.js', 'Docker', 'Socket.io', 'Geolocation', 'REST API', 'React.js'],
-        'teachingAssistantDescription': 'توسعه وب اسکرپر و ربات چت. APIهای فیس‌بوک/اینستاگرام برای رسانه‌های اجتماعی با استفاده از شیوه‌های clean code و الگوی طراحی مدیریت وظایف ناهمزمان با استفاده از BullMQ، همین طور transactions, and promises. شرکت در code reviews برای حفظ کیفیت بالای کد شرکت کرد. تست های unit/E2E  و لاگ پرومتئوس برای همه ماژول‌ها اجرا شده است. نقش: توسعه دهنده بک اند (node ​​js)',
-        'teachingAssistantTags': ['آدرس دهی IP', 'مسیریابی', 'دیواره های آتش', 'امنیت شبکه', 'پروتکل های شبکه (TCP/IP، UDP، ICMP، و غیره)'],
+        'experienceTitle': 'تجربه‌ها',
+        'oticampTitle': 'OTICAMP - سرپرست توسعه بک‌اند (FastAPI)',
+        'oticampDateRange': 'ژانویه 2026 - اکنون',
+        'oticampDescription': '<ul>' +
+            '<li>معماری Modular Monolith را برای سامانه پایش شبکه رادیویی (RNMS) طراحی و پیاده‌سازی کردم.</li>' +
+            '<li>یک لایه بلادرنگ با FastAPI WebSockets و Redis Pub/Sub برای پخش همزمان داده‌ها به چندین داشبورد توسعه دادم.</li>' +
+            '<li>با TimescaleDB، تحلیل داده‌های سری‌زمانی را برای گزارش‌های کیفیت سیگنال بهینه کردم.</li>' +
+            '<li>مستندسازی API را با Scalar OpenAPI استاندارد کردم تا یکپارچه‌سازی فرانت‌اند سریع‌تر شود.</li>' +
+            '<li>فرایندهای CI/CD و استانداردهای بازبینی کد بر پایه SOLID و Clean Code را برقرار کردم.</li>' +
+            '</ul>',
+        'teachingAssistantTitle': 'Tasu Ventures',
+        'dateRange2': 'آوریل 2024 - اکتبر 2024',
+        'teachingAssistantDescription': '<ul>' +
+            '<li>وب‌اسکرپرهایی با تنظیم نرخ درخواست توسعه دادم تا محدودیت‌های نرخ کلاینت دور زده شوند و جمع‌آوری داده پایدار بماند.</li>' +
+            '<li>چت‌بات مبتنی بر LLM با RAG پیاده‌سازی کردم و داده‌های اسکرپ‌شده را در PostgreSQL ایندکس کردم.</li>' +
+            '<li>تسک‌های ناهمزمان روزانه را با BullMQ و Redis Queue مدیریت کردم.</li>' +
+            '<li>APIهای اینستاگرام و فیسبوک را با Webhook و Challenge-Response یکپارچه کردم.</li>' +
+            '<li>RBAC برای 4 نقش پیاده‌سازی کردم و با لاگ‌گذاری Prometheus قابلیت مشاهده‌پذیری را بهبود دادم.</li>' +
+            '<li>در بازبینی کد مشارکت داشتم و پوشش کامل Unit/E2E برای ماژول‌های اصلی حفظ شد.</li>' +
+            '</ul>',
+        'internshipTitle': 'کارآموزی - مرکز توسعه فناوری دانشگاه امیرکبیر',
+        'dateRange1': 'ژانویه 2023 - آوریل 2023',
+        'internshipDescription': '<ul>' +
+            '<li>به عنوان توسعه‌دهنده بک‌اند در یک پروژه استارتاپی با Node.js، PostgreSQL و Docker فعالیت کردم.</li>' +
+            '<li>سیستم مکان‌محور درخواست خریدار را با PostGIS و محاسبات Haversine برای یافتن نزدیک‌ترین فروشگاه‌ها توسعه دادم.</li>' +
+            '<li>API نشان (Neshan) را برای مسیریابی و نمایش نقشه یکپارچه کردم.</li>' +
+            '<li>با Redis Pub/Sub و مکانیزم batching و TTL cleanup کارایی سیستم اعلان را بهبود دادم.</li>' +
+            '</ul>',
 
         'projectsTitle': 'پروژه‌ها',
         'storeLocatorTitle': 'مکان یاب فروشگاه',
@@ -188,6 +221,15 @@ const boldedTexts = {
     'وضعیت تاهل': ['مجرد'],
 };
 
+const boldPatterns = Object.values(boldedTexts)
+    .reduce((allTexts, value) => allTexts.concat(value), [])
+    .map(text => text.trim())
+    .filter(Boolean);
+
+const boldRegex = boldPatterns.length
+    ? new RegExp(`(${boldPatterns.join('|')})`, 'g')
+    : null;
+
 function changeLanguage(language) {
     const sections = ['heroSection', 'aboutMeSection', 'ExperienceSection', 'section1', 'section2', 'section3', 'EducationSection', 'ContactSection', 'FooterSection'];
     sections.forEach(section => translateSection(language, section));
@@ -195,23 +237,19 @@ function changeLanguage(language) {
 
 function translateSection(language, sectionId) {
     const elements = document.querySelectorAll(`#${sectionId} [data-translate]`);
+    const sectionTexts = texts[language] || {};
+
     elements.forEach(element => {
         const key = element.getAttribute('data-translate');
-        let translatedText = texts[language][key];
+        let translatedText = sectionTexts[key];
 
-        for (const key in boldedTexts) {
-            if (boldedTexts.hasOwnProperty(key)) {
-                let boldedText = '';
-                if (Array.isArray(boldedTexts[key])) {
-                    boldedText = boldedTexts[key].join('|');
-                } else {
-                    boldedText = boldedTexts[key];
-                }
-                const regex = new RegExp(`(${boldedText})`, 'g');
-                translatedText = translatedText.replace(regex, '<strong>$1</strong>');
-            }
+        if (typeof translatedText !== 'string') {
+            return;
         }
 
+        if (boldRegex) {
+            translatedText = translatedText.replace(boldRegex, '<strong>$1</strong>');
+        }
 
         element.innerHTML = translatedText;
     });
