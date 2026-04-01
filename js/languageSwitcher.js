@@ -19,7 +19,7 @@ const texts = {
         'familiarityWith': 'Familiarity with: BPMN 2.0, IoT sensor analytics, NLP, cryptography fundamentals, <strong>system design patterns</strong>, and workflow automation bots',
         'personalInfoTitle': 'Personal Information:',
         'ageTitle': 'Age: 22',
-        'degree': 'Degree: Bachelor of Science in Computer Software Engineering',
+        'degree': "Degree: <strong>Master's student</strong> in Computer Cyber Security at Amirkabir University of Technology",
         'preferredWorkLocations': 'Preferred Work Locations: Tehran',
         'remoteWork': 'Remote Work: Open to remote positions with occasional travel as required',
         'workInPerson': 'Work in person: Availability to Start from 2024-07-08 (۱۴۰۳/۰۴/۱۸)',
@@ -67,7 +67,7 @@ const texts = {
         'compilerButton': 'View Project',
 
         'laravelBlogTitle': 'Laravel Blog',
-        'laravelBlogDescription': 'The system enables parts buyers to submit requests for specific parts to spare parts stores. Sellers respond based on their inventory. Buyers can track responses and view seller locations on a map. The system also displays the shortest route from the buyer\'s location to the store.',
+        'laravelBlogDescription': 'Blog platform built with Laravel, Livewire, Jetstream, and Tailwind CSS, featuring authentication, admin workflows, content management, and search-ready architecture.',
         'laravelBlogButton': 'View Project',
         'ecommerceTitle': 'Ecommerce',
         'ecommerceDescription': 'Multilingual and dynamic, order tracking, inventory management, role and access level management, product return and discount sections, rating and review, payment gateway, wishlist functionality, shopping cart, user and admin panel.',
@@ -88,11 +88,11 @@ const texts = {
         'date1End': 'September 2024',
         'major1': 'Major: Computer Engineering, Computer Science Track',
         'gpa1': 'GPA: 3/4',
-        'universityName2': 'National Organization for Development of Exceptional Talents (Sampad)',
-        'degree2': 'High School Diploma, Mathematics',
-        'date2Start': 'September 2015',
-        'date2End': 'September 2020',
-        'gpa2': 'GPA: 19.43/20',
+        'universityName2': 'Amirkabir University of Technology (Tehran Polytechnic)',
+        'degree2': "Master's degree, Computer Cyber Security",
+        'date2Start': 'September 2024',
+        'date2End': '',
+        'gpa2': '',
 
         'contactTitle': 'Contact',
         'github': 'Github',
@@ -121,7 +121,7 @@ const texts = {
         'familiarityWith': 'آشنایی با: BPMN 2.0، تحلیل داده حسگرهای IoT، NLP، مبانی رمزنگاری، <strong>الگوهای طراحی سیستم</strong> و اتوماسیون بات‌ها',
         'personalInfoTitle': 'اطلاعات شخصی:',
         'ageTitle': 'سن: 22',
-        'degree': 'مدرک تحصیلی: کارشناسی ارشد مهندسی کامپیوتر امنیت سایبری',
+        'degree': 'مدرک تحصیلی: <strong>دانشجوی کارشناسی ارشد</strong> امنیت سایبری کامپیوتر در دانشگاه صنعتی امیرکبیر',
         'preferredWorkLocations': 'موقعیت‌های کار مورد علاقه: تهران',
         'remoteWork': 'کار از راه دور:  در صورت لزوم به موقعیت های راه دور با سفرهای گاه به گاه مشکلی ندارم.',
         'workInPerson': 'کار به صورت حضوری: در دسترس بودن برای شروع از ۱۴۰۳/۰۴/۱۸ .',
@@ -168,9 +168,10 @@ const texts = {
         'compilerDescription': 'کامپایلر مبتنی بر پایتون که می تواند کد میانی را از فایل های ورودی تولید کند، تجزیه و تحلیل معنایی را انجام دهد و کد را از طریق تخصیص رجیستر بهینه کند.',
         'compilerButton': 'مشاهده پروژه',
 
-        'laravelBlogTitle': 'Laravel Blog',
+        'laravelBlogTitle': 'وبلاگ Laravel',
+        'laravelBlogDescription': 'پلتفرم وبلاگ ساخته شده با Laravel، Livewire، Jetstream و Tailwind CSS با احراز هویت، مدیریت محتوا، پنل ادمین و ساختار مناسب برای جستجو و توسعه.',
         'laravelBlogButton': 'مشاهده پروژه',
-        'ecommerceTitle': 'تجارت الکترونیک',
+        'ecommerceTitle': 'فروشگاه آنلاین',
         'ecommerceDescription': 'چند زبانه و پویا، ردیابی سفارش، مدیریت موجودی، مدیریت نقش و سطح دسترسی، بخش های بازگشت و تخفیف محصول، رتبه بندی و بررسی، درگاه پرداخت، قابلیت لیست علاقه مندی ها، سبد خرید، پنل کاربری و مدیریت.',
         'ecommerceButton': 'مشاهده پروژه',
         'gitBranchTitle': 'شاخه گیت',
@@ -189,11 +190,11 @@ const texts = {
         'date1End': 'سپتامبر ۲۰۲۴',
         'major1': 'رشته: مهندسی کامپیوتر، رشته علوم کامپیوتر',
         'gpa1': 'معدل: ۳/۴',
-        'universityName2': 'سازمان ملی پرورش استعدادهای استثنایی (سمپاد)',
-        'degree2': 'دیپلم دبیرستان، ریاضی',
-        'date2Start': 'سپتامبر ۲۰۱۵',
-        'date2End': 'سپتامبر ۲۰۲۰',
-        'gpa2': 'معدل: ۱۹.۴۳/۲۰',
+        'universityName2': 'دانشگاه صنعتی امیرکبیر (پلی تکنیک تهران)',
+        'degree2': 'کارشناسی ارشد، امنیت سایبری کامپیوتر',
+        'date2Start': 'سپتامبر ۲۰۲۴',
+        'date2End': '',
+        'gpa2': '',
 
         'contactTitle': 'ارتباط با من',
         'github': 'گیت‌هاب',
@@ -233,6 +234,8 @@ const boldRegex = boldPatterns.length
 function changeLanguage(language) {
     const sections = ['heroSection', 'aboutMeSection', 'ExperienceSection', 'section1', 'section2', 'section3', 'EducationSection', 'ContactSection', 'FooterSection'];
     sections.forEach(section => translateSection(language, section));
+    updatePageLanguage(language);
+    return false;
 }
 
 function translateSection(language, sectionId) {
@@ -263,5 +266,15 @@ function toggleRTL(sectionId, language) {
         section.classList.add('rtl');
     } else {
         section.classList.remove('rtl');
+    }
+}
+
+function updatePageLanguage(language) {
+    document.documentElement.lang = language;
+    document.documentElement.dir = language === 'fa' ? 'rtl' : 'ltr';
+
+    const label = document.querySelector('[data-language-label]');
+    if (label) {
+        label.textContent = language === 'fa' ? 'زبان' : 'Language';
     }
 }
