@@ -46,13 +46,13 @@ const texts = {
             '<li>Implemented RBAC middleware for four roles and improved observability with structured Prometheus logging.</li>' +
             '<li>Participated in code reviews and maintained full unit/E2E coverage for core modules.</li>' +
             '</ul>',
-        'internshipTitle': 'Internship - Technology Development Center of Amirkabir University',
-        'dateRange1': 'Jan 2023 - Apr 2023',
-        'internshipDescription': '<ul>' +
-            '<li>Contributed as a backend developer for a startup project using Node.js, PostgreSQL, and Docker.</li>' +
-            '<li>Built a geospatial buyer-request system for finding nearby spare-part stores with PostGIS and Haversine-based distance queries.</li>' +
-            '<li>Integrated Neshan API for routing and map-based location workflows.</li>' +
-            '<li>Improved notification efficiency using Redis Pub/Sub with batching and TTL cleanup.</li>' +
+        'mohaymenTitle': 'Mohaymen ICT Group - Java Backend Developer',
+        'mohaymenDateRange': 'Mar 2026 - Present',
+        'mohaymenDescription': '<ul>' +
+            '<li>Developing the intelligent audit assistant as part of the national tax system project.</li>' +
+            '<li>Building and maintaining Java-based backend services using Spring Boot for high-reliability enterprise workflows.</li>' +
+            '<li>Designing RESTful APIs and integrating with tax authority data pipelines for automated audit processing.</li>' +
+            '<li>Collaborating with cross-functional teams to deliver AI-assisted compliance and auditing features.</li>' +
             '</ul>',
 
         'projectsTitle': 'Projects',
@@ -148,13 +148,13 @@ const texts = {
             '<li>RBAC برای 4 نقش پیاده‌سازی کردم و با لاگ‌گذاری Prometheus قابلیت مشاهده‌پذیری را بهبود دادم.</li>' +
             '<li>در بازبینی کد مشارکت داشتم و پوشش کامل Unit/E2E برای ماژول‌های اصلی حفظ شد.</li>' +
             '</ul>',
-        'internshipTitle': 'کارآموزی - مرکز توسعه فناوری دانشگاه امیرکبیر',
-        'dateRange1': 'ژانویه 2023 - آوریل 2023',
-        'internshipDescription': '<ul>' +
-            '<li>به عنوان توسعه‌دهنده بک‌اند در یک پروژه استارتاپی با Node.js، PostgreSQL و Docker فعالیت کردم.</li>' +
-            '<li>سیستم مکان‌محور درخواست خریدار را با PostGIS و محاسبات Haversine برای یافتن نزدیک‌ترین فروشگاه‌ها توسعه دادم.</li>' +
-            '<li>API نشان (Neshan) را برای مسیریابی و نمایش نقشه یکپارچه کردم.</li>' +
-            '<li>با Redis Pub/Sub و مکانیزم batching و TTL cleanup کارایی سیستم اعلان را بهبود دادم.</li>' +
+        'mohaymenTitle': 'گروه فناوری اطلاعات و ارتباطات مهیمن - توسعه‌دهنده بک‌اند Java',
+        'mohaymenDateRange': 'مارس 2026 - اکنون',
+        'mohaymenDescription': '<ul>' +
+            '<li>در حال توسعه دستیار هوشمند حسابرسی در قالب پروژه ملی نظام مالیاتی هستم.</li>' +
+            '<li>توسعه و نگهداری سرویس‌های بک‌اند مبتنی بر Java و Spring Boot برای گردش‌کارهای سازمانی با قابلیت اطمینان بالا.</li>' +
+            '<li>طراحی API‌های RESTful و یکپارچه‌سازی با پایپ‌لاین‌های داده سازمان امور مالیاتی برای پردازش خودکار حسابرسی.</li>' +
+            '<li>همکاری با تیم‌های چندتخصصی برای ارائه ویژگی‌های انطباق و حسابرسی با کمک هوش مصنوعی.</li>' +
             '</ul>',
 
         'projectsTitle': 'پروژه‌ها',
